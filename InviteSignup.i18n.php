@@ -197,6 +197,29 @@ It peule registrete a $2",
 	'action-invitesignup' => 'anvita utente a registresse dzor sto sit',
 );
 
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Rancher
+ */
+$messages['sr-ec'] = array(
+	'invitesignup' => 'Позивање корисника на вики',
+	'is-desc' => 'Шаљите позивнице преко е-поште',
+	'is-tableth-date' => 'Датум',
+	'is-tableth-email' => 'Е-пошта',
+	'is-tableth-inviter' => 'Позивалац',
+	'is-tableth-signup' => 'Регистрација',
+	'is-tableth-groups' => 'Групе',
+	'is-add' => 'Додај',
+	'is-delete' => 'Обриши',
+	'is-invalidemail' => '<b>$1</b> није исправна е-адреса.',
+	'is-emailsubj' => 'Позвани сте да се придружите сајту {{SITENAME}}',
+	'is-emailbody' => 'Здраво,
+
+$1 {{GENDER:$1|вас је позвао|вас је позвала|вас је позвао}} да се придружите сајту {{SITENAME}}.
+Налог можете отворити на $2',
+	'right-invitesignup' => 'позивање корисника да отворе налог',
+	'action-invitesignup' => 'позивање корисника да отворе налог на викију',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
