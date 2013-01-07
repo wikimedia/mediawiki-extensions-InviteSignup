@@ -197,6 +197,29 @@ It peule registrete a $2",
 	'action-invitesignup' => 'anvita utente a registresse dzor sto sit',
 );
 
+/** Russian (русский)
+ * @author Kaganer
+ */
+$messages['ru'] = array(
+	'invitesignup' => 'Приглашение в вики новых участников',
+	'is-desc' => 'Отправка приглашений по электронной почте',
+	'is-tableth-date' => 'Дата',
+	'is-tableth-email' => 'Эл. почта',
+	'is-tableth-inviter' => 'Приглашающий',
+	'is-tableth-signup' => 'Зарегистрировался',
+	'is-tableth-groups' => 'Группы',
+	'is-add' => 'Добавить',
+	'is-delete' => 'Удалить',
+	'is-invalidemail' => '<b>$1</b> — это некорректный адрес электронной почты.',
+	'is-emailsubj' => 'Вы получили приглашение присоединиться к проекту {{SITENAME}}',
+	'is-emailbody' => 'Здравствуйте,
+
+{{GENDER:$1|Участник|Участница}} $1 приглашает вас присоединиться к проекту {{SITENAME}}.
+Вы можете зарегистрироваться по ссылке $2',
+	'right-invitesignup' => 'приглашение новых участников',
+	'action-invitesignup' => 'отправку приглашений новым участникам',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
