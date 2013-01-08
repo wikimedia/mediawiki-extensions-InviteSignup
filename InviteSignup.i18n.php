@@ -109,6 +109,29 @@ $messages['de-formal'] = array(
 Sie können sich auf $2 registrieren.',
 );
 
+/** Lower Sorbian (dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'invitesignup' => 'Wužywarjow do toś togo wikija pśepšosyś',
+	'is-desc' => 'E-mailowe pśepšosenja rozpósłaś',
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-mail',
+	'is-tableth-inviter' => 'Pśepšosowaŕ',
+	'is-tableth-signup' => 'Registrěrowaś',
+	'is-tableth-groups' => 'Kupki',
+	'is-add' => 'Pśidaś',
+	'is-delete' => 'Wulašowaś',
+	'is-invalidemail' => '<b>$1</b> njejo płaśiwa e-mailowa adresa.',
+	'is-emailsubj' => 'Sy pśepšosony, {{GRAMMAR:datiw|{{SITENAME}}}} pśistupiś',
+	'is-emailbody' => 'Halo,
+
+{{GENDER:$1|$1}} jo śi {{GENDER:$1|pśepšosył|pśepšosyła}}, śi na {{GRAMMAR:lokatiw|{{SITENAME}}}} registrěrowaś. 
+Móžoš se na $2 registrěrowaś.',
+	'right-invitesignup' => 'Wužywarjow pśepšosyś se registrěrowaś',
+	'action-invitesignup' => 'wužywarjow pśepšosyś, se na toś tom sedle registrěrowaś',
+);
+
 /** French (français)
  * @author Gomoko
  */
@@ -130,6 +153,41 @@ $messages['fr'] = array(
 Vous pouvez le faire ici: $2',
 	'right-invitesignup' => "Inter les utilisateurs à s'inscrire",
 	'action-invitesignup' => "inviter les utilisateurs à s'inscrire sur ce site",
+);
+
+/** Galician (galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'is-tableth-date' => 'Data e hora',
+	'is-tableth-email' => 'Correo electrónico',
+	'is-tableth-inviter' => 'Persoa que convidou',
+	'is-tableth-groups' => 'Grupos',
+	'is-add' => 'Engadir',
+	'is-delete' => 'Borrar',
+);
+
+/** Upper Sorbian (hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'invitesignup' => 'Wužiwarjow do tutoho wikija přeprosyć',
+	'is-desc' => 'E-mejlowe přeprošenja rozpósłać',
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-mejl',
+	'is-tableth-inviter' => 'Přeprošowar',
+	'is-tableth-signup' => 'Registrować',
+	'is-tableth-groups' => 'Skupiny',
+	'is-add' => 'Přidać',
+	'is-delete' => 'Zhašeć',
+	'is-invalidemail' => '<b>$1</b> płaćiwa e-mejlowa adresa njeje.',
+	'is-emailsubj' => 'Sy přeprošeny. do {{GRAMMAR:genitiw|{{SITENAME}}}} zastupić',
+	'is-emailbody' => 'Halo,
+
+{{GENDER:$1|$1}} je će {{GENDER:$1|přeprosył|přeprosyła}}, će na {{GRAMMAR:lokatiw|{{SITENAME}}}} registrować. 
+Móžeš so na $2 registrować.',
+	'right-invitesignup' => 'Wužiwarjow přeprosyć so registrować',
+	'action-invitesignup' => 'wužiwarjow přeprosyć, so na tutym sydle registrować',
 );
 
 /** Japanese (日本語)
