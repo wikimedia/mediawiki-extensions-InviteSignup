@@ -159,12 +159,23 @@ Vous pouvez le faire ici: $2',
  * @author Toliño
  */
 $messages['gl'] = array(
+	'invitesignup' => 'Convidar usuarios a este wiki',
+	'is-desc' => 'Enviar convites por correo electrónico',
 	'is-tableth-date' => 'Data e hora',
 	'is-tableth-email' => 'Correo electrónico',
 	'is-tableth-inviter' => 'Persoa que convidou',
+	'is-tableth-signup' => 'Rexístrese',
 	'is-tableth-groups' => 'Grupos',
 	'is-add' => 'Engadir',
 	'is-delete' => 'Borrar',
+	'is-invalidemail' => '"<b>$1</b>" non é un enderezo de correo electrónico válido.',
+	'is-emailsubj' => 'Recibiu unha invitación para unirse a {{SITENAME}}',
+	'is-emailbody' => 'Boas:
+
+{{GENDER:$1|$1}} envioulle unha invitación para que se rexistre en {{SITENAME}}.
+Pode facelo no seguinte enderezo: $2',
+	'right-invitesignup' => 'Convidar usuarios para que se rexistren',
+	'action-invitesignup' => 'convidar usuarios para que se rexistren neste sitio',
 );
 
 /** Upper Sorbian (hornjoserbsce)
