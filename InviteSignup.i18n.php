@@ -220,6 +220,29 @@ $messages['ja'] = array(
 	'action-invitesignup' => '利用者をこのサイトに招待',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'invitesignup' => '이 위키에 사용자 초대',
+	'is-desc' => '초대 이메일 보내기',
+	'is-tableth-date' => '날짜',
+	'is-tableth-email' => '이메일',
+	'is-tableth-inviter' => '초대',
+	'is-tableth-signup' => '가입하기',
+	'is-tableth-groups' => '그룹',
+	'is-add' => '추가',
+	'is-delete' => 'Delete',
+	'is-invalidemail' => '<b>$1</b>(은)는 올바른 이메일 주소가 아닙니다.',
+	'is-emailsubj' => '{{SITENAME}} 가입에 초대합니다',
+	'is-emailbody' => '안녕하세요,
+
+{{GENDER:$1|$1}} 사용자가 {{SITENAME}}에 가입을 초대합니다
+$2에서 가입할 수 있습니다',
+	'right-invitesignup' => '가입할 사용자 초대',
+	'action-invitesignup' => '이 사이트에 가입할 사용자 초대',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */

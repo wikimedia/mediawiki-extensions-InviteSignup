@@ -10,3 +10,8 @@ $specialPageAliases = array();
 $specialPageAliases['en'] = array(
 	'InviteSignup' => array( 'InviteSignup' ),
 );
+
+/** Korean (한국어) */
+$specialPageAliases['ko'] = array(
+	'InviteSignup' => array( '가입초대' ),
+);
