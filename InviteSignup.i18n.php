@@ -266,6 +266,29 @@ $messages['mk'] = array(
 	'action-invitesignup' => 'канење на корисници да се регистрираат на викито',
 );
 
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'is-desc' => 'Uitnodigingen via e-mail verzenden',
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-mailadres',
+	'is-tableth-inviter' => 'Uitgenodigd door',
+	'is-tableth-signup' => 'Registreren',
+	'is-tableth-groups' => 'Groepen',
+	'is-add' => 'Toevoegen',
+	'is-delete' => 'Verwijderen',
+	'is-invalidemail' => '<b>$1</b> is geen geldig e-mailadres.',
+	'is-emailsubj' => 'U bent uitgenodigd om lid te worden van {{SITENAME}}',
+	'is-emailbody' => 'Hallo,
+
+{{GENDER:$1|$1}} heeft u uitgenodigd om lid te worden van {{SITENAME}}.
+
+U kunt zich aanmelden via $2',
+	'right-invitesignup' => 'Mensen uitnodigen om aan te melden',
+	'action-invitesignup' => 'mensen uit te nodigden om aan te melden bij deze site',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Dragonòt
  */

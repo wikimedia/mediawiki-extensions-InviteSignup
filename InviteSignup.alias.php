@@ -15,3 +15,8 @@ $specialPageAliases['en'] = array(
 $specialPageAliases['ko'] = array(
 	'InviteSignup' => array( '가입초대' ),
 );
+
+/** Macedonian (македонски) */
+$specialPageAliases['mk'] = array(
+	'InviteSignup' => array( 'ПоканаРегистрација' ),
+);
