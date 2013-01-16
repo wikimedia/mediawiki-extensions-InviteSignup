@@ -243,6 +243,13 @@ $2에서 가입할 수 있습니다',
 	'action-invitesignup' => '이 사이트에 가입할 사용자 초대',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'right-invitesignup' => 'Lück zum Metmaache enlaade',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
