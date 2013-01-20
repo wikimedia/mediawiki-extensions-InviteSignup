@@ -109,6 +109,13 @@ $messages['de-formal'] = array(
 Sie können sich auf $2 registrieren.',
 );
 
+/** Zazaki (Zazaki)
+ * @author Mirzali
+ */
+$messages['diq'] = array(
+	'is-delete' => 'Bestere',
+);
+
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
