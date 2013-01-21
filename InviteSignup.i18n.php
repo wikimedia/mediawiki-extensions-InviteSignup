@@ -257,6 +257,24 @@ $messages['ksh'] = array(
 	'right-invitesignup' => 'Lück zum Metmaache enlaade',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'invitesignup' => 'Benotzer op dës Wiki invitéieren.',
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-Mail',
+	'is-tableth-inviter' => 'Invitéieren',
+	'is-tableth-signup' => 'Schreift Iech an',
+	'is-tableth-groups' => 'Gruppen',
+	'is-add' => 'Derbäisetzen',
+	'is-delete' => 'Läschen',
+	'is-invalidemail' => '<b>$1</b> ass keng valabel E-Mailadress.',
+	'is-emailsubj' => 'Dir sidd invitéieren op {{SITENAME}} matzemaachen',
+	'right-invitesignup' => 'Benotzer invitéiere sech anzeschreiwen',
+	'action-invitesignup' => 'Benotzer invitéiere sech op dëse Site anzewchreiwen',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
