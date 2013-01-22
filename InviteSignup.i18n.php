@@ -53,6 +53,29 @@ $messages['qqq'] = array(
 	'action-invitesignup' => '{{doc-action|invitesignup}}',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Mousa
+ */
+$messages['azb'] = array(
+	'invitesignup' => 'ایستیفاده‌چیلری بو ویکی‌یه چاغیر',
+	'is-desc' => 'ایمیل چاغیرمالاری گؤندر',
+	'is-tableth-date' => 'تاریخ',
+	'is-tableth-email' => 'ایمیل',
+	'is-tableth-inviter' => 'چاغیران',
+	'is-tableth-signup' => 'آد یازدیر',
+	'is-tableth-groups' => 'قروپلار',
+	'is-add' => 'آرتیر',
+	'is-delete' => 'سیل',
+	'is-invalidemail' => '<b>$1</b> بیر گئچرلی ایمیل آدرسی دئییل.',
+	'is-emailsubj' => 'سیز {{SITENAME}}-ه قوشولماغا چاغیریلمیسینیز',
+	'is-emailbody' => 'سلام،
+
+{{GENDER:$1|$1}} سیزی {{SITENAME}}-ه آد یازدیماغا چاغیریب‌دیر.
+سیز $2-ده آد یازدیرابیلرسینیز.',
+	'right-invitesignup' => 'ایستیفاده‌چیلری آد یازدیماغا چاغیر',
+	'action-invitesignup' => 'ایستیفاده‌چیلری بو سایتا آد یازدیرماغا چاغیر',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Muhammed taha
  */
