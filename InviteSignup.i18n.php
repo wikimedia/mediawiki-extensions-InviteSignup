@@ -162,6 +162,21 @@ Móžoš se na $2 registrěrowaś.',
 	'action-invitesignup' => 'wužywarjow pśepšosyś, se na toś tom sedle registrěrowaś',
 );
 
+/** Finnish (suomi)
+ * @author Veikk0.ma
+ */
+$messages['fi'] = array(
+	'invitesignup' => 'Kutsu käyttäjiä tähän wikiin',
+	'is-tableth-date' => 'Päiväys',
+	'is-tableth-email' => 'Sähköposti',
+	'is-tableth-inviter' => 'Kutsuja',
+	'is-tableth-groups' => 'Ryhmät',
+	'is-add' => 'Lisää',
+	'is-delete' => 'Poista',
+	'is-invalidemail' => '<b>$1</b> ei ole kelvollinen sähköpostiosoite.',
+	'is-emailsubj' => 'Sinut on kutsuttu liittymään {{SITENAME}} -sivustolle.',
+);
+
 /** French (français)
  * @author Gomoko
  */
