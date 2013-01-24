@@ -57,7 +57,7 @@ $messages['qqq'] = array(
  * @author Mousa
  */
 $messages['azb'] = array(
-	'invitesignup' => 'ایستیفاده‌چیلری بو ویکی‌یه چاغیر',
+	'invitesignup' => 'ایستیفاده‌چیلری بو ویکی‌یه چاغیر', # Fuzzy
 	'is-desc' => 'ایمیل چاغیرمالاری گؤندر',
 	'is-tableth-date' => 'تاریخ',
 	'is-tableth-email' => 'ایمیل',
@@ -102,7 +102,7 @@ $messages['ckb'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'invitesignup' => 'Benutzer zu diesem Wiki einladen',
+	'invitesignup' => 'Leute zu diesem Wiki einladen',
 	'is-desc' => 'Ermöglicht den Versand von E-Mail-Einladungen',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-Mail',
@@ -166,7 +166,7 @@ Móžoš se na $2 registrěrowaś.',
  * @author Veikk0.ma
  */
 $messages['fi'] = array(
-	'invitesignup' => 'Kutsu käyttäjiä tähän wikiin',
+	'invitesignup' => 'Kutsu käyttäjiä tähän wikiin', # Fuzzy
 	'is-tableth-date' => 'Päiväys',
 	'is-tableth-email' => 'Sähköposti',
 	'is-tableth-inviter' => 'Kutsuja',
@@ -299,7 +299,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'invitesignup' => 'Benotzer op dës Wiki invitéieren.',
+	'invitesignup' => 'Benotzer op dës Wiki invitéieren.', # Fuzzy
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-Mail',
 	'is-tableth-inviter' => 'Invitéieren',
