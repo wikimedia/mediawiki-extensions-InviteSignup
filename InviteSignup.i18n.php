@@ -7,7 +7,7 @@
 $messages = array();
 
 $messages['en'] = array(
-	'invitesignup' => 'Invite users to this wiki',
+	'invitesignup' => 'Invite people to this wiki',
 	'is-desc' => 'Send e-mail invites',
 	'is-tableth-date' => 'Date',
 	'is-tableth-email' => 'E-mail',
