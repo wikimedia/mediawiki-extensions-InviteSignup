@@ -163,6 +163,7 @@ Móžoš se na $2 registrěrowaś.',
 );
 
 /** Finnish (suomi)
+ * @author Crt
  * @author Veikk0.ma
  */
 $messages['fi'] = array(
@@ -174,7 +175,7 @@ $messages['fi'] = array(
 	'is-add' => 'Lisää',
 	'is-delete' => 'Poista',
 	'is-invalidemail' => '<b>$1</b> ei ole kelvollinen sähköpostiosoite.',
-	'is-emailsubj' => 'Sinut on kutsuttu liittymään {{SITENAME}} -sivustolle.',
+	'is-emailsubj' => 'Sinut on kutsuttu liittymään sivustolle {{SITENAME}}.',
 );
 
 /** French (français)
@@ -204,7 +205,7 @@ Vous pouvez le faire ici: $2',
  * @author Toliño
  */
 $messages['gl'] = array(
-	'invitesignup' => 'Convidar usuarios a este wiki',
+	'invitesignup' => 'Convidar xente a este wiki',
 	'is-desc' => 'Enviar convites por correo electrónico',
 	'is-tableth-date' => 'Data e hora',
 	'is-tableth-email' => 'Correo electrónico',
@@ -317,7 +318,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'invitesignup' => 'Канење на корисници на викито',
+	'invitesignup' => 'Канење на луѓе на викито',
 	'is-desc' => 'Испрати покани по е-пошта',
 	'is-tableth-date' => 'Датум',
 	'is-tableth-email' => 'Е-пошта',
@@ -386,7 +387,7 @@ It peule registrete a $2",
  * @author Kaganer
  */
 $messages['ru'] = array(
-	'invitesignup' => 'Приглашение в вики новых участников',
+	'invitesignup' => 'Приглашение новых людей в этот вики-проект',
 	'is-desc' => 'Отправка приглашений по электронной почте',
 	'is-tableth-date' => 'Дата',
 	'is-tableth-email' => 'Эл. почта',
@@ -436,4 +437,27 @@ $messages['te'] = array(
 	'is-tableth-groups' => 'గుంపులు',
 	'is-delete' => 'తొలగించు',
 	'is-invalidemail' => '<b>$1</b> అనేది సరైన ఈమెయిలు చిరునామా కాదు.',
+);
+
+/** Ukrainian (українська)
+ * @author Ата
+ */
+$messages['uk'] = array(
+	'invitesignup' => 'Запрошення користувачів до цієї вікі',
+	'is-desc' => 'Надіслати запрошення електронною поштою',
+	'is-tableth-date' => 'Дата',
+	'is-tableth-email' => 'Електронна пошта',
+	'is-tableth-inviter' => 'Запрошує',
+	'is-tableth-signup' => 'Зареєструватись',
+	'is-tableth-groups' => 'Групи',
+	'is-add' => 'Додати',
+	'is-delete' => 'Видалити',
+	'is-invalidemail' => '<b>$1</b> — некоректна адреса електронної пошти.',
+	'is-emailsubj' => 'Вас запрошують приєднатися до {{SITENAME}}',
+	'is-emailbody' => 'Привіт,
+
+{{GENDER:$1|$1}} запрошує Вас приєднатись до {{SITENAME}}.
+Ви можете зареєструватись за посиланням $2',
+	'right-invitesignup' => 'Запрошування нових користувачів',
+	'action-invitesignup' => 'надсилання запрошень новим користувачам',
 );
