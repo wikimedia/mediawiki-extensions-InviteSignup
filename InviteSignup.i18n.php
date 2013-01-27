@@ -80,7 +80,7 @@ $messages['azb'] = array(
  * @author Muhammed taha
  */
 $messages['ckb'] = array(
-	'invitesignup' => 'بەکارھێنەران بۆ ئەم ویکییە بانگھێشت بکە',
+	'invitesignup' => 'بەکارھێنەران بۆ ئەم ویکییە بانگھێشت بکە', # Fuzzy
 	'is-tableth-date' => 'ڕێکەوت',
 	'is-tableth-email' => 'ئیمەیڵ',
 	'is-tableth-inviter' => 'بانگھێشتکەر',
@@ -143,7 +143,7 @@ $messages['diq'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'invitesignup' => 'Wužywarjow do toś togo wikija pśepšosyś',
+	'invitesignup' => 'Wužywarjow do toś togo wikija pśepšosyś', # Fuzzy
 	'is-desc' => 'E-mailowe pśepšosenja rozpósłaś',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-mail',
@@ -182,7 +182,7 @@ $messages['fi'] = array(
  * @author Gomoko
  */
 $messages['fr'] = array(
-	'invitesignup' => 'Inviter des utilisateurs sur ce wiki',
+	'invitesignup' => 'Inviter des utilisateurs sur ce wiki', # Fuzzy
 	'is-desc' => "Envoyer des courriels d'invitation",
 	'is-tableth-date' => 'Date',
 	'is-tableth-email' => 'Courriel',
@@ -228,7 +228,7 @@ Pode facelo no seguinte enderezo: $2',
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'invitesignup' => 'Wužiwarjow do tutoho wikija přeprosyć',
+	'invitesignup' => 'Wužiwarjow do tutoho wikija přeprosyć', # Fuzzy
 	'is-desc' => 'E-mejlowe přeprošenja rozpósłać',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-mejl',
@@ -251,7 +251,7 @@ Móžeš so na $2 registrować.',
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'invitesignup' => '利用者をこのウィキに招待',
+	'invitesignup' => '利用者をこのウィキに招待', # Fuzzy
 	'is-desc' => '招待メールを送信する',
 	'is-tableth-date' => '日時',
 	'is-tableth-email' => 'メール',
@@ -270,7 +270,7 @@ $messages['ja'] = array(
  * @author 아라
  */
 $messages['ko'] = array(
-	'invitesignup' => '이 위키에 사용자 초대',
+	'invitesignup' => '이 위키에 사용자 초대', # Fuzzy
 	'is-desc' => '초대 이메일 보내기',
 	'is-tableth-date' => '날짜',
 	'is-tableth-email' => '이메일',
@@ -341,6 +341,7 @@ $messages['mk'] = array(
  * @author Siebrand
  */
 $messages['nl'] = array(
+	'invitesignup' => 'Mensen uitnodigen voor deze wiki',
 	'is-desc' => 'Uitnodigingen via e-mail verzenden',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-mailadres',
@@ -364,7 +365,7 @@ U kunt zich aanmelden via $2',
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'invitesignup' => 'Anvita utent a sta wiki',
+	'invitesignup' => 'Anvita utent a sta wiki', # Fuzzy
 	'is-desc' => 'Manda anvit për corel',
 	'is-tableth-date' => 'Data',
 	'is-tableth-email' => 'Pòsta eletrònica',
@@ -410,7 +411,7 @@ $messages['ru'] = array(
  * @author Rancher
  */
 $messages['sr-ec'] = array(
-	'invitesignup' => 'Позивање корисника на вики',
+	'invitesignup' => 'Позивање корисника на вики', # Fuzzy
 	'is-desc' => 'Шаљите позивнице преко е-поште',
 	'is-tableth-date' => 'Датум',
 	'is-tableth-email' => 'Е-пошта',
@@ -460,4 +461,27 @@ $messages['uk'] = array(
 Ви можете зареєструватись за посиланням $2',
 	'right-invitesignup' => 'Запрошування нових користувачів',
 	'action-invitesignup' => 'надсилання запрошень новим користувачам',
+);
+
+/** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
+ */
+$messages['zh-hans'] = array(
+	'invitesignup' => '邀请其他人加入此wiki',
+	'is-desc' => '发送电子邮件邀请',
+	'is-tableth-date' => '日期',
+	'is-tableth-email' => '电子邮箱',
+	'is-tableth-inviter' => '邀请者',
+	'is-tableth-signup' => '注册',
+	'is-tableth-groups' => '组',
+	'is-add' => '添加',
+	'is-delete' => '删除',
+	'is-invalidemail' => '<b>$1</b>不是一个有效的电子邮件地址。',
+	'is-emailsubj' => '您被邀请加入 {{SITENAME}}',
+	'is-emailbody' => '您好，
+
+{{GENDER:$1|$1}} 邀请您注册 {{SITENAME}}。
+您可以在 $2 注册',
+	'right-invitesignup' => '邀请用户注册',
+	'action-invitesignup' => '邀请用户来此站点注册',
 );
