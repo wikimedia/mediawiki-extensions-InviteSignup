@@ -25,3 +25,8 @@ $specialPageAliases['ko'] = array(
 $specialPageAliases['mk'] = array(
 	'InviteSignup' => array( 'ПоканаРегистрација' ),
 );
+
+/** Dutch (Nederlands) */
+$specialPageAliases['nl'] = array(
+	'InviteSignup' => array( 'Registratieinvitatie' ),
+);
