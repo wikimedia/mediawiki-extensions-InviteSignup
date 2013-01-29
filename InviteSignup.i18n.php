@@ -182,7 +182,7 @@ $messages['fi'] = array(
  * @author Gomoko
  */
 $messages['fr'] = array(
-	'invitesignup' => 'Inviter des utilisateurs sur ce wiki', # Fuzzy
+	'invitesignup' => 'Inviter des personnes sur ce wiki',
 	'is-desc' => "Envoyer des courriels d'invitation",
 	'is-tableth-date' => 'Date',
 	'is-tableth-email' => 'Courriel',
