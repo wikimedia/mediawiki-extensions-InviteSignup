@@ -162,6 +162,29 @@ Móžoš se na $2 registrěrowaś.',
 	'action-invitesignup' => 'wužywarjow pśepšosyś, se na toś tom sedle registrěrowaś',
 );
 
+/** Spanish (español)
+ * @author Fitoschido
+ */
+$messages['es'] = array(
+	'invitesignup' => 'Invitar personas a este wiki',
+	'is-desc' => 'Enviar invitaciones por correo',
+	'is-tableth-date' => 'Fecha',
+	'is-tableth-email' => 'Correo electrónico',
+	'is-tableth-inviter' => 'Invitador',
+	'is-tableth-signup' => 'Registrarse',
+	'is-tableth-groups' => 'Grupos',
+	'is-add' => 'Añadir',
+	'is-delete' => 'Eliminar',
+	'is-invalidemail' => '<b>$1</b> no es una dirección de correo electrónico válida.',
+	'is-emailsubj' => 'Te han invitado a unirte a {{SITENAME}}',
+	'is-emailbody' => 'Hola,
+
+{{GENDER:$1|$1}} te invitó a registrarte en {{SITENAME}}.
+Puedes hacerlo en $2',
+	'right-invitesignup' => 'Invitar usuarios a registrarse',
+	'action-invitesignup' => 'invitar a usuarios a registrarse en este sitio',
+);
+
 /** Finnish (suomi)
  * @author Crt
  * @author Veikk0.ma
@@ -382,6 +405,14 @@ $messages['pms'] = array(
 It peule registrete a $2",
 	'right-invitesignup' => 'Anvita utent a registresse',
 	'action-invitesignup' => 'anvita utente a registresse dzor sto sit',
+);
+
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'invitesignup' => 'دې ويکي ته خلک رابلل',
+	'is-desc' => 'د برېښليک بلنې لېږل',
 );
 
 /** Russian (русский)
