@@ -289,11 +289,27 @@ $messages['ja'] = array(
 	'action-invitesignup' => '利用者をこのサイトに招待',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'is-desc' => 'მოსაწვევების გაგზავნა ელ. ფოსტით',
+	'is-tableth-date' => 'თარიღი',
+	'is-tableth-email' => 'ელ. ფოსტა',
+	'is-tableth-inviter' => 'მომწვევი',
+	'is-tableth-signup' => 'რეგისტრაცია',
+	'is-tableth-groups' => 'ჯგუფები',
+	'is-add' => 'დამატება',
+	'is-delete' => 'წაშლა',
+	'is-invalidemail' => '<b>$1</b> არ არის სწორი ელ. ფოსტის მისამართი.',
+	'is-emailsubj' => 'თქვენ ხართ მოწვეული შეუერთდეთ პროექტს {{SITENAME}}',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
 $messages['ko'] = array(
-	'invitesignup' => '이 위키에 사용자 초대', # Fuzzy
+	'invitesignup' => '이 위키에 사람을 초대합니다',
 	'is-desc' => '초대 이메일 보내기',
 	'is-tableth-date' => '날짜',
 	'is-tableth-email' => '이메일',
