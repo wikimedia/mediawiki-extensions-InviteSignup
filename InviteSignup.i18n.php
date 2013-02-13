@@ -293,6 +293,7 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'invitesignup' => 'ხალხის მოწვევა ამ ვიკიში',
 	'is-desc' => 'მოსაწვევების გაგზავნა ელ. ფოსტით',
 	'is-tableth-date' => 'თარიღი',
 	'is-tableth-email' => 'ელ. ფოსტა',
@@ -303,6 +304,8 @@ $messages['ka'] = array(
 	'is-delete' => 'წაშლა',
 	'is-invalidemail' => '<b>$1</b> არ არის სწორი ელ. ფოსტის მისამართი.',
 	'is-emailsubj' => 'თქვენ ხართ მოწვეული შეუერთდეთ პროექტს {{SITENAME}}',
+	'right-invitesignup' => 'ახალი მოხმარებლების მოწვევა',
+	'action-invitesignup' => 'მოსაწვევების გაგზავნა ახალი მოხმარებლებისათვის',
 );
 
 /** Korean (한국어)
