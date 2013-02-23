@@ -30,3 +30,8 @@ $specialPageAliases['mk'] = array(
 $specialPageAliases['nl'] = array(
 	'InviteSignup' => array( 'Registratieinvitatie' ),
 );
+
+/** Simplified Chinese (中文（简体）‎) */
+$specialPageAliases['zh-hans'] = array(
+	'InviteSignup' => array( '邀请登录' ),
+);
