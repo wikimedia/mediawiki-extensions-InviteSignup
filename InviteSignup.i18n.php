@@ -432,6 +432,15 @@ It peule registrete a $2",
 $messages['ps'] = array(
 	'invitesignup' => 'دې ويکي ته خلک رابلل',
 	'is-desc' => 'د برېښليک بلنې لېږل',
+	'is-tableth-date' => 'نېټه',
+	'is-tableth-email' => 'برېښليک',
+	'is-tableth-inviter' => 'وربلونکی',
+	'is-tableth-signup' => 'نومليکل',
+	'is-tableth-groups' => 'ډلې',
+	'is-add' => 'ورګډول',
+	'is-delete' => 'ړنګول',
+	'is-invalidemail' => '<b>$1</b> يوه کره برېښليک پته نه ده.',
+	'is-emailsubj' => 'تاسې ته د {{SITENAME}} سره د يوځای کېدلو بلنه درکوو',
 );
 
 /** Russian (русский)
