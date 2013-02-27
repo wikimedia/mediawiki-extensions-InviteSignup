@@ -35,3 +35,8 @@ $specialPageAliases['nl'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'InviteSignup' => array( '邀请登录' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'InviteSignup' => array( '邀請註冊' ),
+);
