@@ -76,6 +76,20 @@ $messages['azb'] = array(
 	'action-invitesignup' => 'ایستیفاده‌چیلری بو سایتا آد یازدیرماغا چاغیر',
 );
 
+/** Breton (brezhoneg)
+ * @author Y-M D
+ */
+$messages['br'] = array(
+	'is-tableth-date' => 'Deiziad',
+	'is-tableth-email' => 'Postel',
+	'is-tableth-signup' => 'En em enskrivañ',
+	'is-tableth-groups' => 'Strolladoù',
+	'is-add' => 'Ouzhpennañ',
+	'is-delete' => 'Diverkañ',
+	'is-invalidemail' => "N'eo ket <b>$1</b> ur chomlec'h postel reizh.",
+	'is-emailsubj' => "Pedet oc'h da zont war {{SITENAME}}",
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Muhammed taha
  */
@@ -203,6 +217,7 @@ $messages['fi'] = array(
 
 /** French (français)
  * @author Gomoko
+ * @author Y-M D
  */
 $messages['fr'] = array(
 	'invitesignup' => 'Inviter des personnes sur ce wiki',
@@ -220,7 +235,7 @@ $messages['fr'] = array(
 
 {{GENDER:$1|$1}} vous a invité à vous inscrire sur {{SITENAME}}.
 Vous pouvez le faire ici: $2',
-	'right-invitesignup' => "Inter les utilisateurs à s'inscrire",
+	'right-invitesignup' => "Inviter les utilisateurs à s'inscrire",
 	'action-invitesignup' => "inviter les utilisateurs à s'inscrire sur ce site",
 );
 
