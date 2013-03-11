@@ -77,11 +77,13 @@ $messages['azb'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Y-M D
  */
 $messages['br'] = array(
 	'is-tableth-date' => 'Deiziad',
 	'is-tableth-email' => 'Postel',
+	'is-tableth-inviter' => 'Peder',
 	'is-tableth-signup' => 'En em enskrivañ',
 	'is-tableth-groups' => 'Strolladoù',
 	'is-add' => 'Ouzhpennañ',
