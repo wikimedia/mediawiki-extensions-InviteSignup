@@ -268,7 +268,7 @@ Pode facelo no seguinte enderezo: $2',
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'invitesignup' => 'Wužiwarjow do tutoho wikija přeprosyć', # Fuzzy
+	'invitesignup' => 'Ludźi do tutoho wikija přeprosyć',
 	'is-desc' => 'E-mejlowe přeprošenja rozpósłać',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-mejl',
