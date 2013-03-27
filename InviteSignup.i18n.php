@@ -30,7 +30,7 @@ You can sign up at $2',
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'invitesignup' => 'Name of special page',
+	'invitesignup' => '{{doc-special|InviteSignup|unlisted=1}}',
 	'is-desc' => '{{desc|name=Invite Signup|url=http://www.mediawiki.org/wiki/Extension:InviteSignup}}',
 	'is-tableth-date' => 'Table header.
 "Date" stands for "date and time".
@@ -152,6 +152,7 @@ Sie können sich auf $2 registrieren.',
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'is-tableth-signup' => 'Qeyd be',
 	'is-delete' => 'Bestere',
 );
 
@@ -394,6 +395,14 @@ $messages['mk'] = array(
 Тоа можете да го сторите на $2',
 	'right-invitesignup' => 'Поканување на корисници да се регистрираат',
 	'action-invitesignup' => 'канење на корисници да се регистрираат на викито',
+);
+
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-Mail',
 );
 
 /** Dutch (Nederlands)
