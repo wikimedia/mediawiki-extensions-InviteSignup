@@ -360,7 +360,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
-	'invitesignup' => 'Benotzer op dës Wiki invitéieren.', # Fuzzy
+	'invitesignup' => 'Leit op dës Wiki invitéieren',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-Mail',
 	'is-tableth-inviter' => 'Invitéieren',
