@@ -430,14 +430,15 @@ U kunt zich aanmelden via $2',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'invitesignup' => 'Anvita utent a sta wiki', # Fuzzy
-	'is-desc' => 'Manda anvit për corel',
+	'invitesignup' => 'Anvité dla gent su sta wiki',
+	'is-desc' => "Mandé dij mëssagi d'anvit",
 	'is-tableth-date' => 'Data',
 	'is-tableth-email' => 'Pòsta eletrònica',
-	'is-tableth-inviter' => 'Anvitador',
+	'is-tableth-inviter' => 'Anvitant',
 	'is-tableth-signup' => "Ch'as anscriva",
 	'is-tableth-groups' => 'Partìe',
 	'is-add' => 'Gionta',
@@ -448,8 +449,8 @@ $messages['pms'] = array(
 
 {{GENDER:$1|$1}} a l'ha anvitate a registrete dzor {{SITENAME}}.
 It peule registrete a $2",
-	'right-invitesignup' => 'Anvita utent a registresse',
-	'action-invitesignup' => 'anvita utente a registresse dzor sto sit',
+	'right-invitesignup' => "Anvité j'utent a registresse",
+	'action-invitesignup' => "anvité j'utent a registresse dzora a 's sit",
 );
 
 /** Pashto (پښتو)
