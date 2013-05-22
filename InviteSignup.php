@@ -14,7 +14,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'InviteSignup',
-	'version' => '2012-12-26',
+	'version' => '2013-05-22',
 	'author' => array( 'Niklas Laxström' ),
 	'descriptionmsg' => 'is-desc',
 );
@@ -27,6 +27,11 @@ $wgExtensionMessagesFiles['InviteSignup'] = "$dir/InviteSignup.i18n.php";
 $wgAvailableRights[] = 'invitesignup';
 
 $wgInviteSignupHash = null;
+
+/**
+ * List of groups the invitee will be promoted automatically.
+ */
+$wgISGroups = array();
 
 $wgHooks['BeforeInitialize'][] = function ( $title, &$unused, &$output, &$user, $request ) {
 	if ( !$title->isSpecialPage() ) {
