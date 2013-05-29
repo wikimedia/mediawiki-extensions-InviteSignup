@@ -265,6 +265,21 @@ Pode facelo no seguinte enderezo: $2',
 	'action-invitesignup' => 'convidar usuarios para que se rexistren neste sitio',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'is-desc' => 'שליחת הזמנות בדוא״ל',
+	'is-tableth-date' => 'תאריך',
+	'is-tableth-email' => 'דוא״ל',
+	'is-tableth-signup' => 'הרשמה',
+	'is-tableth-groups' => 'קבוצות',
+	'is-add' => 'הוספה',
+	'is-delete' => 'מחיקה',
+	'is-invalidemail' => '<b>$1</b> אינה כתובת דוא״ל תקנית.',
+	'is-emailsubj' => 'הוזמנת להצטרף אל {{SITENAME}}',
+);
+
 /** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
@@ -289,10 +304,11 @@ Móžeš so na $2 registrować.',
 );
 
 /** Japanese (日本語)
+ * @author Fryed-peach
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'invitesignup' => '利用者をこのウィキに招待', # Fuzzy
+	'invitesignup' => 'このウィキに人を招待',
 	'is-desc' => '招待メールを送信する',
 	'is-tableth-date' => '日時',
 	'is-tableth-email' => 'メール',
