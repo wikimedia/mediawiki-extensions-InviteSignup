@@ -377,6 +377,7 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'invitesignup' => 'Leit op dës Wiki invitéieren',
+	'is-desc' => 'E-Mail-Invitatioune schécken',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-Mail',
 	'is-tableth-inviter' => 'Invitéieren',
@@ -386,6 +387,10 @@ $messages['lb'] = array(
 	'is-delete' => 'Läschen',
 	'is-invalidemail' => '<b>$1</b> ass keng valabel E-Mailadress.',
 	'is-emailsubj' => 'Dir sidd invitéieren op {{SITENAME}} matzemaachen',
+	'is-emailbody' => 'Bonjour,
+
+{{GENDER:$1|$1}} huet Iech invitéiert fir Iech op {{SITENAME}} anzeschreiwen.
+Dir kënnt Iech op der Säit $2 aschreiwen.',
 	'right-invitesignup' => 'Benotzer invitéiere sech anzeschreiwen',
 	'action-invitesignup' => 'Benotzer invitéiere sech op dëse Site anzewchreiwen',
 );
