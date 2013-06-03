@@ -207,7 +207,7 @@ Puedes hacerlo en $2',
  * @author Veikk0.ma
  */
 $messages['fi'] = array(
-	'invitesignup' => 'Kutsu käyttäjiä tähän wikiin', # Fuzzy
+	'invitesignup' => 'Kutsu käyttäjiä tähän wikiin',
 	'is-tableth-date' => 'Päiväys',
 	'is-tableth-email' => 'Sähköposti',
 	'is-tableth-inviter' => 'Kutsuja',
