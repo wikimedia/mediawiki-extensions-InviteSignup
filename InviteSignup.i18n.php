@@ -615,3 +615,26 @@ $messages['zh-hans'] = array(
 	'right-invitesignup' => '邀请用户注册',
 	'action-invitesignup' => '邀请用户来此站点注册',
 );
+
+/** Traditional Chinese (中文（繁體）‎)
+ * @author Justincheng12345
+ */
+$messages['zh-hant'] = array(
+	'invitesignup' => '邀請他人加入此維基',
+	'is-desc' => '發送電子郵件邀請',
+	'is-tableth-date' => '日期',
+	'is-tableth-email' => '電子郵件',
+	'is-tableth-inviter' => '邀請者',
+	'is-tableth-signup' => '註冊',
+	'is-tableth-groups' => '羣組',
+	'is-add' => '新增',
+	'is-delete' => '刪除',
+	'is-invalidemail' => '<b>$1</b>並非有效電子郵件地址。',
+	'is-emailsubj' => '您獲邀請加入{{SITENAME}}',
+	'is-emailbody' => '您好，
+
+{{GENDER:$1|$1}}邀請您註冊{{SITENAME}}。
+您可以於$2註冊',
+	'right-invitesignup' => '邀請用戶註冊',
+	'action-invitesignup' => '邀請用戶於此網站註冊',
+);
