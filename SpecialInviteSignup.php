@@ -6,16 +6,28 @@
  * @ingroup Extensions
  *
  * @author Niklas Laxström
- * @copyright Copyright © 2012 Lost in Translations Inc.
+ * @copyright Copyright © 2012-2013 Lost in Translations Inc.
  */
 
 class SpecialInviteSignup extends SpecialPage {
 	protected $groups;
+	protected $store;
 
 	public function __construct() {
 		parent::__construct( 'InviteSignup', 'invitesignup' );
 		global $wgISGroups;
 		$this->groups = $wgISGroups;
+	}
+
+	public function setStore( InviteStore $store ) {
+		$this->store = $store;
+	}
+
+	protected function getStore() {
+		if ( $this->store === null ) {
+			$this->store = new InviteStore( wfGetDB( DB_MASTER ), 'invitesignup' );
+		}
+		return $this->store;
 	}
 
 	public function execute( $par ) {
@@ -26,10 +38,12 @@ class SpecialInviteSignup extends SpecialPage {
 		$out = $this->getOutput();
 		$this->setHeaders();
 
+		$store = $this->getStore();
+
 		$token = $request->getVal( 'token' );
 		if ( $request->wasPosted() && $user->matchEditToken( $token, 'is' ) ) {
 			if ( $request->getVal( 'do' ) === 'delete' ) {
-				self::deleteInvite( $request->getVal( 'hash' ) );
+				$store->deleteInvite( $request->getVal( 'hash' ) );
 			}
 			if ( $request->getVal( 'do' ) === 'add' ) {
 				$email = $request->getVal( 'email' );
@@ -45,15 +59,13 @@ class SpecialInviteSignup extends SpecialPage {
 							$groups[] = $group;
 						}
 					}
-					self::addInvite( $user, $email, $groups );
+					$hash = $store->addInvite( $user, $email, $groups );
+					self::sendInviteEmail( $user, $email, $hash );
 				}
 			}
 		}
 
-		$invites = self::getInvites();
-		uasort( $invites, function ( $a, $b ) {
-			return $a['when'] < $b['when'];
-		} );
+		$invites = $store->getInvites();
 		$lang = $this->getLanguage();
 
 		$out->addHtml(
@@ -78,12 +90,12 @@ class SpecialInviteSignup extends SpecialPage {
 				$inviteeUser = User::newFromId( $invite['userid'] );
 				$name = $inviteeUser->getName();
 				$email = "$name <$email>";
-				$groups = $inviteeUser->getGroups();
 			}
 
 			foreach ( $groups as $i => $g ) {
 				$groups[$i] = User::getGroupMember( $g );
 			}
+
 			$groups = $lang->commaList( $groups );
 
 			$out->addHtml(
@@ -149,48 +161,6 @@ class SpecialInviteSignup extends SpecialPage {
 		return $row;
 	}
 
-	public static function getInvites() {
-		$dbw = wfGetDB( DB_MASTER );
-		$table = 'objectcache';
-		$fields = array( 'keyname' );
-		$conds = array(
-			'keyname' . $dbw->buildLike( wfMemcKey( 'invitesignup' ), $dbw->anyString() ),
-		);
-		$res = $dbw->select( $table, $fields, $conds, __METHOD__ );
-
-		$keys = array();
-		foreach ( $res as $row ) {
-			$keys[] = $row->keyname;
-		}
-
-		$cache = self::getCache();
-		$invites = array();
-		foreach ( $cache->getMulti( $keys ) as $item ) {
-			$invites[] = $item;
-		}
-
-		return $invites;
-	}
-
-	public static function addInvite( User $inviter, $email, $groups ) {
-		global $wgSecretKey;
-		$hash = sha1( $inviter->getId() . $wgSecretKey . $email );
-		$memckey = wfMemcKey( 'invitesignup', $hash );
-		$data = array(
-			'inviter' => $inviter->getId(),
-			'email' => $email,
-			'when' => wfTimestamp(),
-			'used' => false,
-			'hash' => $hash,
-			'groups' => $groups,
-		);
-
-		$cache = self::getCache();
-		$cache->set( $memckey, $data );
-
-		self::sendInviteEmail( $inviter, $email, $hash );
-	}
-
 	public static function sendInviteEmail( User $inviter, $email, $hash ) {
 		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl( array( 'invite' => $hash, 'returnto' => 'Special:Dashboard' ) );
 
@@ -212,28 +182,4 @@ class SpecialInviteSignup extends SpecialPage {
 		$job->run();
 	}
 
-	public static function deleteInvite( $hash ) {
-		$memckey = wfMemcKey( 'invitesignup', $hash );
-		$cache = self::getCache();
-		$cache->delete( $memckey );
-	}
-
-	public static function getInvite( $hash ) {
-		$memckey = wfMemcKey( 'invitesignup', $hash );
-		$cache = self::getCache();
-		return $cache->get( $memckey );
-	}
-
-	public static function getCache() {
-		return wfGetCache( CACHE_DB );
-	}
-
-	public static function addSignupDate( User $user, $hash ) {
-		$invite = self::getInvite( $hash );
-		$invite['used'] = wfTimestamp();
-		$invite['userid'] = $user->getId();
-		$cache = self::getCache();
-		$memckey = wfMemcKey( 'invitesignup', $hash );
-		$cache->set( $memckey, $invite );
-	}
 }

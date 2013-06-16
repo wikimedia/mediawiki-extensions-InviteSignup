@@ -7,7 +7,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @ingroup Extensions
  *
  * @author Niklas Laxström
- * @copyright Copyright © 2012 Lost in Translations Inc.
+ * @copyright Copyright © 2012-2013 Lost in Translations Inc.
  * @license GPL 2.0 or later
  */
 
@@ -20,10 +20,11 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 $dir = __DIR__;
-$wgSpecialPages['InviteSignup'] = 'SpecialInviteSignup';
+$wgAutoloadClasses['InviteStore'] = "$dir/InviteStore.php";
 $wgAutoloadClasses['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
 $wgExtensionMessagesFiles['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
 $wgExtensionMessagesFiles['InviteSignup'] = "$dir/InviteSignup.i18n.php";
+$wgSpecialPages['InviteSignup'] = 'SpecialInviteSignup';
 $wgAvailableRights[] = 'invitesignup';
 
 $wgInviteSignupHash = null;
@@ -45,8 +46,9 @@ $wgHooks['BeforeInitialize'][] = function ( $title, &$unused, &$output, &$user, 
 
 	$hash = $request->getVal( 'invite', $request->getCookie( 'invite' ) );
 	if ( $hash ) {
-		$invite = SpecialInviteSignup::getInvite( $hash );
-		if ( $invite && $invite['used'] === false ) {
+		$store = new InviteStore( wfGetDB( DB_SLAVE ), 'invitesignup' );
+		$invite = $store->getInvite( $hash );
+		if ( $invite && $invite['used'] === null ) {
 			global $wgInviteSignupHash;
 			$wgInviteSignupHash = $hash;
 			$request->response()->setCookie( 'invite', $hash );
@@ -82,7 +84,10 @@ $wgHooks['AddNewAccount'][] = function ( $user ) {
 	if ( $wgInviteSignupHash === null ) {
 		return true;
 	}
-	$invite = SpecialInviteSignup::getInvite( $wgInviteSignupHash );
+
+	$store = new InviteStore( wfGetDB( DB_MASTER ), 'invitesignup' );
+
+	$invite = $store->getInvite( $wgInviteSignupHash );
 	$user->setOption( 'is-inviter', $invite['inviter'] );
 	$user->setEmail( $invite['email'] );
 	$user->confirmEmail();
@@ -90,8 +95,14 @@ $wgHooks['AddNewAccount'][] = function ( $user ) {
 		$user->addGroup( $group );
 	}
 	$user->saveSettings();
-	SpecialInviteSignup::addSignupDate( $user, $wgInviteSignupHash );
+	$store->addSignupDate( $user, $wgInviteSignupHash );
 	global $wgRequest;
 	$wgRequest->response()->setCookie( 'invite', '', time() - 86400 );
+	return true;
+};
+
+$wgHooks['LoadExtensionSchemaUpdates'][] = function ( DatabaseUpdater $updater ) {
+	$dir = __DIR__ . '/sql';
+	$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.sql" );
 	return true;
 };
