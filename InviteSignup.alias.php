@@ -31,6 +31,11 @@ $specialPageAliases['mk'] = array(
 	'InviteSignup' => array( 'ПоканаРегистрација' ),
 );
 
+/** Low Saxon (Netherlands) (Nedersaksies) */
+$specialPageAliases['nds-nl'] = array(
+	'InviteSignup' => array( 'Registrasie_uutneudiging' ),
+);
+
 /** Dutch (Nederlands) */
 $specialPageAliases['nl'] = array(
 	'InviteSignup' => array( 'Registratieinvitatie' ),
