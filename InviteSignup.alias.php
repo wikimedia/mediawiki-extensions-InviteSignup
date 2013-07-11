@@ -21,6 +21,11 @@ $specialPageAliases['diq'] = array(
 	'InviteSignup' => array( 'WaştışCıkewtış' ),
 );
 
+/** Persian (فارسی) */
+$specialPageAliases['fa'] = array(
+	'InviteSignup' => array( 'ثبت‌نام_دعوت' ),
+);
+
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
 	'InviteSignup' => array( '가입초대' ),

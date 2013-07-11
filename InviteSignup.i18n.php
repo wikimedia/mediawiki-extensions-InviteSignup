@@ -450,6 +450,13 @@ U kunt zich aanmelden via $2',
 	'action-invitesignup' => 'mensen uit te nodigden om aan te melden bij deze site',
 );
 
+/** Polish (polski)
+ * @author Chrumps
+ */
+$messages['pl'] = array(
+	'is-tableth-date' => 'Data',
+);
+
 /** Piedmontese (Piemontèis)
  * @author Borichèt
  * @author Dragonòt
