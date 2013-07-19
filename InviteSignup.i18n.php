@@ -452,9 +452,26 @@ U kunt zich aanmelden via $2',
 
 /** Polish (polski)
  * @author Chrumps
+ * @author Woytecr
  */
 $messages['pl'] = array(
+	'invitesignup' => 'Zaproś ludzi na tą wiki',
+	'is-desc' => 'Wysyła zaproszenia e-mail',
 	'is-tableth-date' => 'Data',
+	'is-tableth-email' => 'E-mail',
+	'is-tableth-inviter' => 'Zapraszający',
+	'is-tableth-signup' => 'Zarejestruj się',
+	'is-tableth-groups' => 'Grupy',
+	'is-add' => 'Dodaj',
+	'is-delete' => 'Usuń',
+	'is-invalidemail' => '<b>$1</b> nie jest prawidłowym adresem e-mail.',
+	'is-emailsubj' => 'Zostałeś zaproszony do dołączenia na {{SITENAME}}',
+	'is-emailbody' => 'Witaj,
+
+$1 {{GENDER:$1|zaprosił|zaprosiła}} Cię do rejestracji na stronie {{SITENAME}}.
+Możesz zarejestrować się tutaj: $2',
+	'right-invitesignup' => 'Zaproś użytkowników do rejestracji',
+	'action-invitesignup' => 'zaproś użytkowników do rejestracji na tą stronę',
 );
 
 /** Piedmontese (Piemontèis)
