@@ -584,6 +584,29 @@ $1 {{GENDER:$1|вас је позвао|вас је позвала|вас је �
 	'action-invitesignup' => 'позивање корисника да отворе налог на викију',
 );
 
+/** Swedish (svenska)
+ * @author Jopparn
+ */
+$messages['sv'] = array(
+	'invitesignup' => 'Bjud in personer till denna wiki',
+	'is-desc' => 'Skicka inbjudningar via e-post',
+	'is-tableth-date' => 'Datum',
+	'is-tableth-email' => 'E-post',
+	'is-tableth-inviter' => 'Inbjudaren',
+	'is-tableth-signup' => 'Registrera',
+	'is-tableth-groups' => 'Grupper',
+	'is-add' => 'Lägg till',
+	'is-delete' => 'Radera',
+	'is-invalidemail' => '<b>$1</b> är inte en giltig e-postadress.',
+	'is-emailsubj' => 'Du är inbjuden att gå med i {{SITENAME}}',
+	'is-emailbody' => 'Hej,
+
+{{GENDER:$1|$1}} har bjudit in dig att gå med i {{SITENAME}}.
+Du kan registrera dig på $2',
+	'right-invitesignup' => 'Bjud in användare att registrera sig',
+	'action-invitesignup' => 'bjud in användare att registrera sig på denna webbplats',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
