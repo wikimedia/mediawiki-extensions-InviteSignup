@@ -374,6 +374,7 @@ $messages['ksh'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'invitesignup' => 'Leit op dës Wiki invitéieren',
@@ -385,7 +386,7 @@ $messages['lb'] = array(
 	'is-tableth-groups' => 'Gruppen',
 	'is-add' => 'Derbäisetzen',
 	'is-delete' => 'Läschen',
-	'is-invalidemail' => '<b>$1</b> ass keng valabel E-Mailadress.',
+	'is-invalidemail' => '<b>$1</b> ass keng valabel E-Mail-Adress.',
 	'is-emailsubj' => 'Dir sidd invitéieren op {{SITENAME}} matzemaachen',
 	'is-emailbody' => 'Bonjour,
 
