@@ -46,9 +46,12 @@ $messages['qqq'] = array(
 {{Identical|Add}}',
 	'is-delete' => 'Submit button text
 {{Identical|Delete}}',
-	'is-invalidemail' => 'error message',
+	'is-invalidemail' => 'Used as error message. Parameters:
+* $1 - email address',
 	'is-emailsubj' => 'e-mail title',
-	'is-emailbody' => 'e-mail body',
+	'is-emailbody' => 'Used as email body. Parameters:
+* $1 - username
+* $2 - URL',
 	'right-invitesignup' => '{{doc-right|invitesignup}}',
 	'action-invitesignup' => '{{doc-action|invitesignup}}',
 );
