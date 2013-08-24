@@ -8,15 +8,15 @@ $messages = array();
 
 $messages['en'] = array(
 	'invitesignup' => 'Invite people to this wiki',
-	'is-desc' => 'Send e-mail invites',
+	'is-desc' => 'Send email invites',
 	'is-tableth-date' => 'Date',
-	'is-tableth-email' => 'E-mail',
+	'is-tableth-email' => 'Email',
 	'is-tableth-inviter' => 'Inviter',
 	'is-tableth-signup' => 'Sign up',
 	'is-tableth-groups' => 'Groups',
 	'is-add' => 'Add',
 	'is-delete' => 'Delete',
-	'is-invalidemail' => '<b>$1</b> is not a valid e-mail address.',
+	'is-invalidemail' => '<b>$1</b> is not a valid email address.',
 	'is-emailsubj' => 'You are invited to join {{SITENAME}}',
 	'is-emailbody' => 'Hello,
 
