@@ -644,6 +644,15 @@ $messages['uk'] = array(
 	'action-invitesignup' => 'надсилання запрошень новим користувачам',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'is-desc' => 'שיקן ע־פאסט איינלאדונגען',
+	'is-tableth-email' => 'ע-פאסט',
+	'is-invalidemail' => '<b>$1</b> איז נישט קיין גילטיקער בליצפאסט אדרעס.',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  * @author Yfdyh000
  */
