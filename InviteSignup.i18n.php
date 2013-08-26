@@ -268,6 +268,13 @@ Pode facelo no seguinte enderezo: $2',
 	'action-invitesignup' => 'convidar usuarios para que se rexistren neste sitio',
 );
 
+/** Guarani (Avañe'ẽ)
+ * @author P. S. F. Freitas
+ */
+$messages['gn'] = array(
+	'is-tableth-email' => 'Pareha (e-mail)',
+);
+
 /** Hebrew (עברית)
  * @author YaronSh
  */
@@ -452,6 +459,13 @@ $messages['nl'] = array(
 U kunt zich aanmelden via $2',
 	'right-invitesignup' => 'Mensen uitnodigen om aan te melden',
 	'action-invitesignup' => 'mensen uit te nodigden om aan te melden bij deze site',
+);
+
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'is-tableth-email' => 'Corrièr electronic',
 );
 
 /** Polish (polski)
