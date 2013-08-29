@@ -465,7 +465,15 @@ U kunt zich aanmelden via $2',
  * @author Cedric31
  */
 $messages['oc'] = array(
+	'invitesignup' => 'Convidar de monde sus aqueste wiki',
+	'is-desc' => 'Mandar de corrièrs electronics de convit',
+	'is-tableth-date' => 'Data',
 	'is-tableth-email' => 'Corrièr electronic',
+	'is-tableth-inviter' => 'Convidaire',
+	'is-tableth-signup' => 'Inscrivètz-vos',
+	'is-tableth-groups' => 'Gropes',
+	'is-add' => 'Apondre',
+	'is-delete' => 'Suprimir',
 );
 
 /** Polish (polski)
