@@ -36,6 +36,11 @@ $specialPageAliases['mk'] = array(
 	'InviteSignup' => array( 'ПоканаРегистрација' ),
 );
 
+/** Malayalam (മലയാളം) */
+$specialPageAliases['ml'] = array(
+	'InviteSignup' => array( 'അംഗത്വമെടുക്കാൻക്ഷണിക്കുക' ),
+);
+
 /** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'InviteSignup' => array( 'Registrasie_uutneudiging' ),
