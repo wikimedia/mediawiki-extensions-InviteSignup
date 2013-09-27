@@ -69,7 +69,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$lang = $this->getLanguage();
 
 		$out->addHtml(
-			Html::openElement( 'table', array( 'class' => 'wikitable sortable' ) ) .
+			Html::openElement( 'table', array( 'class' => 'wikitable' ) ) .
 			Html::openElement( 'thead' ) .
 			Html::openElement( 'tr' ) .
 			Html::rawElement( 'th', null, $this->msg( 'is-tableth-date' )->text() ) .
