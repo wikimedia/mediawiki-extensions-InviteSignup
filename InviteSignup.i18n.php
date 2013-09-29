@@ -536,7 +536,7 @@ $messages['ps'] = array(
 	'is-tableth-signup' => 'نومليکل',
 	'is-tableth-groups' => 'ډلې',
 	'is-add' => 'ورګډول',
-	'is-delete' => 'ړنګول',
+	'is-delete' => 'ړنگول',
 	'is-invalidemail' => '<b>$1</b> يوه کره برېښليک پته نه ده.',
 	'is-emailsubj' => 'تاسې ته د {{SITENAME}} سره د يوځای کېدلو بلنه درکوو',
 );
