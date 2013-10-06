@@ -3,6 +3,7 @@
  * @author Niklas Laxström
  * @copyright Copyright © 2012 Lost in Translations Inc.
  */
+// @codingStandardsIgnoreFile
 
 $specialPageAliases = array();
 
