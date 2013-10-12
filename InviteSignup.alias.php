@@ -54,7 +54,7 @@ $specialPageAliases['nl'] = array(
 
 /** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
-	'InviteSignup' => array( '邀请登录' ),
+	'InviteSignup' => array( '邀请注册' ),
 );
 
 /** Traditional Chinese (中文（繁體）‎) */
