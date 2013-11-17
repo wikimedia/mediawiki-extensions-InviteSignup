@@ -676,6 +676,7 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Liuxinyu970226
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -689,7 +690,7 @@ $messages['zh-hans'] = array(
 	'is-add' => '添加',
 	'is-delete' => '删除',
 	'is-invalidemail' => '<b>$1</b>不是一个有效的电子邮件地址。',
-	'is-emailsubj' => '您被邀请加入 {{SITENAME}}',
+	'is-emailsubj' => '您被邀请加入{{SITENAME}}',
 	'is-emailbody' => '您好，
 
 {{GENDER:$1|$1}} 邀请您注册 {{SITENAME}}。
