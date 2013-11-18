@@ -438,6 +438,7 @@ $messages['nds'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author McDutchie
  * @author Siebrand
  */
 $messages['nl'] = array(
@@ -457,8 +458,8 @@ $messages['nl'] = array(
 {{GENDER:$1|$1}} heeft u uitgenodigd om lid te worden van {{SITENAME}}.
 
 U kunt zich aanmelden via $2',
-	'right-invitesignup' => 'Mensen uitnodigen om aan te melden',
-	'action-invitesignup' => 'mensen uit te nodigden om aan te melden bij deze site',
+	'right-invitesignup' => 'Mensen uitnodigen om zich aan te melden',
+	'action-invitesignup' => 'mensen uit te nodigen om zich aan te melden bij deze site',
 );
 
 /** Occitan (occitan)
