@@ -313,6 +313,21 @@ Móžeš so na $2 registrować.',
 	'action-invitesignup' => 'wužiwarjow přeprosyć, so na tutym sydle registrować',
 );
 
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'invitesignup' => 'Invita le persone su questo wiki',
+	'is-desc' => 'Invio delle email di invito',
+	'is-tableth-date' => 'Data',
+	'is-tableth-email' => 'Email',
+	'is-tableth-inviter' => "Autore dell'invito",
+	'is-tableth-groups' => 'Gruppi',
+	'is-add' => 'Aggiungi',
+	'is-delete' => 'Cancella',
+	'is-invalidemail' => '<b>$1</b> non è un indirizzo email valido.',
+);
+
 /** Japanese (日本語)
  * @author Fryed-peach
  * @author Shirayuki
