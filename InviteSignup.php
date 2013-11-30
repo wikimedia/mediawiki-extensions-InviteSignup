@@ -15,6 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'InviteSignup',
 	'version' => '2013-05-22',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:InviteSignup',
 	'author' => array( 'Niklas Laxström' ),
 	'descriptionmsg' => 'is-desc',
 );
