@@ -315,9 +315,10 @@ Móžeš so na $2 registrować.',
 
 /** Italian (italiano)
  * @author Beta16
+ * @author Nemo bis
  */
 $messages['it'] = array(
-	'invitesignup' => 'Invita le persone su questo wiki',
+	'invitesignup' => 'Invita persone in questo wiki',
 	'is-desc' => 'Invio delle email di invito',
 	'is-tableth-date' => 'Data',
 	'is-tableth-email' => 'Email',
@@ -409,7 +410,7 @@ $messages['lb'] = array(
 	'is-tableth-inviter' => 'Invitéieren',
 	'is-tableth-signup' => 'Schreift Iech an',
 	'is-tableth-groups' => 'Gruppen',
-	'is-add' => 'Dobäisetzen',
+	'is-add' => 'Derbäisetzen',
 	'is-delete' => 'Läschen',
 	'is-invalidemail' => '<b>$1</b> ass keng valabel E-Mail-Adress.',
 	'is-emailsubj' => 'Dir sidd invitéieren op {{SITENAME}} matzemaachen',
