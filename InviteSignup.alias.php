@@ -12,6 +12,11 @@ $specialPageAliases['en'] = array(
 	'InviteSignup' => array( 'InviteSignup' ),
 );
 
+/** Arabic (العربية) */
+$specialPageAliases['ar'] = array(
+	'InviteSignup' => array( 'دعوة_تسجيل' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'InviteSignup' => array( 'Registrierungseinladung' ),
