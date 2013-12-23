@@ -95,6 +95,13 @@ $messages['br'] = array(
 	'is-emailsubj' => "Pedet oc'h da zont war {{SITENAME}}",
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'is-add' => 'ТӀетоха',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Muhammed taha
  */
@@ -163,7 +170,7 @@ $messages['diq'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'invitesignup' => 'Wužywarjow do toś togo wikija pśepšosyś', # Fuzzy
+	'invitesignup' => 'Luźi do toś togo wikija pśepšosyś',
 	'is-desc' => 'E-mailowe pśepšosenja rozpósłaś',
 	'is-tableth-date' => 'Datum',
 	'is-tableth-email' => 'E-mail',
