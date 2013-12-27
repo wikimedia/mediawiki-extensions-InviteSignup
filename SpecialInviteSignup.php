@@ -115,10 +115,10 @@ class SpecialInviteSignup extends SpecialPage {
 	protected function getDeleteButton( $hash ) {
 		$attribs = array(
 			'method' => 'post',
-			'action' => $this->getTitle()->getLocalUrl(),
+			'action' => $this->getPageTitle()->getLocalUrl(),
 		);
 		$form = Html::openElement( 'form', $attribs );
-		$form .= Html::hidden( 'title', $this->getTitle()->getDBKey() );
+		$form .= Html::hidden( 'title', $this->getPageTitle()->getDBKey() );
 		$form .= Html::hidden( 'token', $this->getUser()->getEditToken( 'is' ) );
 		$form .= Html::hidden( 'hash', $hash );
 		$form .= Html::hidden( 'do', 'delete' );
@@ -132,14 +132,14 @@ class SpecialInviteSignup extends SpecialPage {
 		$lang = $this->getLanguage();
 
 		$add =
-			Html::hidden( 'title', $this->getTitle()->getDBKey() ) .
+			Html::hidden( 'title', $this->getPageTitle()->getDBKey() ) .
 			Html::hidden( 'token', $user->getEditToken( 'is' ) ) .
 			Html::hidden( 'do', 'add' ) .
 			Xml::submitButton( $this->msg( 'is-add' )->text() );
 
 		$attribs = array(
 			'method' => 'post',
-			'action' => $this->getTitle()->getLocalUrl(),
+			'action' => $this->getPageTitle()->getLocalUrl(),
 		);
 
 		$groupChecks = array();
