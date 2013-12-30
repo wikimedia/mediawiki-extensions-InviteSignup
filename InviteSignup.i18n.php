@@ -212,6 +212,18 @@ Puedes hacerlo en $2',
 	'action-invitesignup' => 'invitar a usuarios a registrarse en este sitio',
 );
 
+/** Persian (فارسی)
+ * @author Reza1615
+ */
+$messages['fa'] = array(
+	'is-tableth-date' => 'تاریخ',
+	'is-tableth-email' => 'پست الکترونیکی',
+	'is-tableth-signup' => 'ثبت نام',
+	'is-tableth-groups' => 'گروه‌ها',
+	'is-add' => 'افزودن',
+	'is-delete' => 'حذف',
+);
+
 /** Finnish (suomi)
  * @author Crt
  * @author Veikk0.ma
