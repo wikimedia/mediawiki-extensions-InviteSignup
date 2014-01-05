@@ -8,10 +8,10 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  *
  * @author Niklas Laxström
  * @copyright Copyright © 2012-2013 Lost in Translations Inc.
- * @license GPL 2.0 or later
+ * @license GPL-2.0+
  */
 
-$wgExtensionCredits['specialpage'][] = array(
+$GLOBALS['wgExtensionCredits']['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'InviteSignup',
 	'version' => '2013-05-22',
@@ -21,20 +21,21 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 $dir = __DIR__;
-$wgAutoloadClasses['InviteStore'] = "$dir/InviteStore.php";
-$wgAutoloadClasses['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
-$wgExtensionMessagesFiles['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
-$wgExtensionMessagesFiles['InviteSignup'] = "$dir/InviteSignup.i18n.php";
-$wgSpecialPages['InviteSignup'] = 'SpecialInviteSignup';
-$wgAvailableRights[] = 'invitesignup';
+$GLOBALS['wgAutoloadClasses']['InviteStore'] = "$dir/InviteStore.php";
+$GLOBALS['wgAutoloadClasses']['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
+$GLOBALS['wgExtensionMessagesFiles']['InviteSignup'] = "$dir/InviteSignup.i18n.php";
+$GLOBALS['wgExtensionMessagesFiles']['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
+$GLOBALS['wgSpecialPages']['InviteSignup'] = 'SpecialInviteSignup';
+$GLOBALS['wgAvailableRights'][] = 'invitesignup';
 
-$wgInviteSignupHash = null;
+$GLOBALS['wgInviteSignupHash'] = null;
 
 /**
  * List of groups the invitee will be promoted automatically.
  */
-$wgISGroups = array();
+$GLOBALS['wgISGroups'] = array();
 
+global $wgHooks;
 $wgHooks['BeforeInitialize'][] = function ( $title, &$unused, &$output, &$user, $request ) {
 	if ( !$title->isSpecialPage() ) {
 		return true;

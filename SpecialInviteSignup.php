@@ -7,6 +7,7 @@
  *
  * @author Niklas Laxström
  * @copyright Copyright © 2012-2013 Lost in Translations Inc.
+ * @license GPL-2.0+
  */
 
 class SpecialInviteSignup extends SpecialPage {

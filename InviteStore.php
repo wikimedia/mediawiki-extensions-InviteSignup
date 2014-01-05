@@ -7,6 +7,7 @@
  *
  * @author Niklas Laxström
  * @copyright Copyright © 2013 Lost in Translations Inc.
+ * @license GPL-2.0+
  */
 
 /**
