@@ -14,7 +14,7 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 $GLOBALS['wgExtensionCredits']['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'InviteSignup',
-	'version' => '2013-05-22',
+	'version' => '2014-01-05',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:InviteSignup',
 	'author' => array( 'Niklas Laxström' ),
 	'descriptionmsg' => 'is-desc',
@@ -23,6 +23,7 @@ $GLOBALS['wgExtensionCredits']['specialpage'][] = array(
 $dir = __DIR__;
 $GLOBALS['wgAutoloadClasses']['InviteStore'] = "$dir/InviteStore.php";
 $GLOBALS['wgAutoloadClasses']['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
+$GLOBALS['wgMessagesDirs']['InviteSignup'] = __DIR__ . /i18n';
 $GLOBALS['wgExtensionMessagesFiles']['InviteSignup'] = "$dir/InviteSignup.i18n.php";
 $GLOBALS['wgExtensionMessagesFiles']['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
 $GLOBALS['wgSpecialPages']['InviteSignup'] = 'SpecialInviteSignup';

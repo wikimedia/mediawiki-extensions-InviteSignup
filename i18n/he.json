@@ -1,0 +1,16 @@
+{
+    "@metadata": {
+        "authors": [
+            "YaronSh"
+        ]
+    },
+    "is-desc": "שליחת הזמנות בדוא״ל",
+    "is-tableth-date": "תאריך",
+    "is-tableth-email": "דוא״ל",
+    "is-tableth-signup": "הרשמה",
+    "is-tableth-groups": "קבוצות",
+    "is-add": "הוספה",
+    "is-delete": "מחיקה",
+    "is-invalidemail": "<b>$1</b> אינה כתובת דוא״ל תקנית.",
+    "is-emailsubj": "הוזמנת להצטרף אל {{SITENAME}}"
+}

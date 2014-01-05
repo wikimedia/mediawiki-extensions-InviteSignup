@@ -1,0 +1,21 @@
+{
+    "@metadata": {
+        "authors": [
+            "Rancher"
+        ]
+    },
+    "invitesignup": "Позивање корисника на вики",
+    "is-desc": "Шаљите позивнице преко е-поште",
+    "is-tableth-date": "Датум",
+    "is-tableth-email": "Е-пошта",
+    "is-tableth-inviter": "Позивалац",
+    "is-tableth-signup": "Регистрација",
+    "is-tableth-groups": "Групе",
+    "is-add": "Додај",
+    "is-delete": "Обриши",
+    "is-invalidemail": "<b>$1</b> није исправна е-адреса.",
+    "is-emailsubj": "Позвани сте да се придружите сајту {{SITENAME}}",
+    "is-emailbody": "Здраво,\n\n$1 {{GENDER:$1|вас је позвао|вас је позвала|вас је позвао}} да се придружите сајту {{SITENAME}}.\nНалог можете отворити на $2",
+    "right-invitesignup": "позивање корисника да отворе налог",
+    "action-invitesignup": "позивање корисника да отворе налог на викију"
+}
