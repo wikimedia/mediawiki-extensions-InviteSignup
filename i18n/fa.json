@@ -1,13 +1,22 @@
 {
     "@metadata": {
         "authors": [
-            "Reza1615"
+            "Reza1615",
+            "Armin1392"
         ]
     },
+    "invitesignup": "دعوت کردن اشخاص به این ویکی",
+    "is-desc": "ارسال دعوت‌های رایانامه",
     "is-tableth-date": "تاریخ",
     "is-tableth-email": "پست الکترونیکی",
+    "is-tableth-inviter": "دعوت‌کننده",
     "is-tableth-signup": "ثبت نام",
     "is-tableth-groups": "گروه‌ها",
     "is-add": "افزودن",
-    "is-delete": "حذف"
+    "is-delete": "حذف",
+    "is-invalidemail": "\u003Cb\u003E$1\u003C/b\u003E یک آدرس رایانامهٔ معتبر نیست.",
+    "is-emailsubj": "شما به ملحق شدن به {{SITENAME}} دعوت شده اید",
+    "is-emailbody": "سلام،\n{{GENDER:$1|$1}} شما را برای ثبت‌نام در {{SITENAME}} دعوت کرده‌است.\nشما می‌توانید در $2 ثبت‌نام کنید.",
+    "right-invitesignup": "دعوت کاربران به ثبت‌نام",
+    "action-invitesignup": "دعوت کاربران به ثبت‌نام در این سایت"
 }
