@@ -2,13 +2,14 @@
     "@metadata": {
         "authors": [
             "Reza1615",
-            "Armin1392"
+            "Armin1392",
+            "Ebraminio"
         ]
     },
     "invitesignup": "دعوت کردن اشخاص به این ویکی",
     "is-desc": "ارسال دعوت‌های رایانامه",
     "is-tableth-date": "تاریخ",
-    "is-tableth-email": "پست الکترونیکی",
+    "is-tableth-email": "رایانامه",
     "is-tableth-inviter": "دعوت‌کننده",
     "is-tableth-signup": "ثبت نام",
     "is-tableth-groups": "گروه‌ها",
