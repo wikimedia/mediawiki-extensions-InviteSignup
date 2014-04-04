@@ -2,7 +2,8 @@
     "@metadata": {
         "authors": [
             "Liuxinyu970226",
-            "Yfdyh000"
+            "Yfdyh000",
+            "Xiaomingyan"
         ]
     },
     "invitesignup": "邀请其他人加入此wiki",
@@ -18,5 +19,5 @@
     "is-emailsubj": "您被邀请加入{{SITENAME}}",
     "is-emailbody": "您好，\n\n{{GENDER:$1|$1}} 邀请您注册 {{SITENAME}}。\n您可以在 $2 注册",
     "right-invitesignup": "邀请用户注册",
-    "action-invitesignup": "邀请用户来此站点注册"
+    "action-invitesignup": "邀请用户在该网站注册"
 }
