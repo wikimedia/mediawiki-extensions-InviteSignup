@@ -1,10 +1,11 @@
 {
     "@metadata": {
         "authors": [
-            "Muhammed taha"
+            "Muhammed taha",
+            "Calak"
         ]
     },
-    "invitesignup": "بەکارھێنەران بۆ ئەم ویکییە بانگھێشت بکە",
+    "invitesignup": "خەڵک بۆ ئەم ویکییە بانگھێشت بکە",
     "is-tableth-date": "ڕێکەوت",
     "is-tableth-email": "ئیمەیڵ",
     "is-tableth-inviter": "بانگھێشتکەر",
