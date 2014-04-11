@@ -20,6 +20,15 @@ class SpecialInviteSignup extends SpecialPage {
 		$this->groups = $wgISGroups;
 	}
 
+	// BC for MW <= 1.22
+	public function getPageTitle( $subpage = false ) {
+		if ( method_exists( 'SpecialPage', 'getPageTitle' ) ) {
+			return parent::getPageTitle( $subpage );
+		} else {
+			return parent::getTitle( $subpage );
+		}
+	}
+
 	public function setStore( InviteStore $store ) {
 		$this->store = $store;
 	}
