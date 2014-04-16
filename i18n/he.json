@@ -1,22 +1,22 @@
 {
-    "@metadata": {
-        "authors": [
-            "YaronSh",
-            "Yona b"
-        ]
-    },
-    "invitesignup": "להזמין אנשים לוויקי זה",
-    "is-desc": "שליחת הזמנות בדוא״ל",
-    "is-tableth-date": "תאריך",
-    "is-tableth-email": "דוא״ל",
-    "is-tableth-inviter": "מוזמנים",
-    "is-tableth-signup": "הרשמה",
-    "is-tableth-groups": "קבוצות",
-    "is-add": "הוספה",
-    "is-delete": "מחיקה",
-    "is-invalidemail": "\u003Cb\u003E$1\u003C/b\u003E אינה כתובת דוא״ל תקנית.",
-    "is-emailsubj": "הוזמנת להצטרף אל {{SITENAME}}",
-    "is-emailbody": "שלום,\n\n$1 {{GENDER:$1|הזמין|הזמינה}} אותך להירשם ל־{{SITENAME}}.\nניתן להירשם ב־$2",
-    "right-invitesignup": "הזמן משתמשים להירשם",
-    "action-invitesignup": "הזמן משתמשים להירשם לאתר זה"
+	"@metadata": {
+		"authors": [
+			"YaronSh",
+			"Yona b"
+		]
+	},
+	"invitesignup": "להזמין אנשים לוויקי זה",
+	"is-desc": "שליחת הזמנות בדוא״ל",
+	"is-tableth-date": "תאריך",
+	"is-tableth-email": "דוא״ל",
+	"is-tableth-inviter": "מוזמנים",
+	"is-tableth-signup": "הרשמה",
+	"is-tableth-groups": "קבוצות",
+	"is-add": "הוספה",
+	"is-delete": "מחיקה",
+	"is-invalidemail": "<b>$1</b> אינה כתובת דוא״ל תקנית.",
+	"is-emailsubj": "הוזמנת להצטרף אל {{SITENAME}}",
+	"is-emailbody": "שלום,\n\n$1 {{GENDER:$1|הזמין|הזמינה}} אותך להירשם ל־{{SITENAME}}.\nניתן להירשם ב־$2",
+	"right-invitesignup": "הזמן משתמשים להירשם",
+	"action-invitesignup": "הזמן משתמשים להירשם לאתר זה"
 }

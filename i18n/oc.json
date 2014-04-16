@@ -1,16 +1,16 @@
 {
-    "@metadata": {
-        "authors": [
-            "Cedric31"
-        ]
-    },
-    "invitesignup": "Convidar de monde sus aqueste wiki",
-    "is-desc": "Mandar de corrièrs electronics de convit",
-    "is-tableth-date": "Data",
-    "is-tableth-email": "Corrièr electronic",
-    "is-tableth-inviter": "Convidaire",
-    "is-tableth-signup": "Inscrivètz-vos",
-    "is-tableth-groups": "Gropes",
-    "is-add": "Apondre",
-    "is-delete": "Suprimir"
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"invitesignup": "Convidar de monde sus aqueste wiki",
+	"is-desc": "Mandar de corrièrs electronics de convit",
+	"is-tableth-date": "Data",
+	"is-tableth-email": "Corrièr electronic",
+	"is-tableth-inviter": "Convidaire",
+	"is-tableth-signup": "Inscrivètz-vos",
+	"is-tableth-groups": "Gropes",
+	"is-add": "Apondre",
+	"is-delete": "Suprimir"
 }
