@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Nemo bis"
 		]
 	},
 	"invitesignup": "{{doc-special|InviteSignup|unlisted=1}}",
@@ -9,7 +10,7 @@
 	"is-tableth-date": "Table header.\n\"Date\" stands for \"date and time\".\n{{Identical|Date}}",
 	"is-tableth-email": "Table header\n{{Identical|E-mail}}",
 	"is-tableth-inviter": "Table header",
-	"is-tableth-signup": "Table header for date\n{{Identical|Sign up}}",
+	"is-tableth-signup": "Table header for the date in which the user accepted the invite and created an account, if that happened.\n{{Identical|Sign up}}",
 	"is-tableth-groups": "Table header\n{{Identical|Group}}",
 	"is-add": "Submit button text\n{{Identical|Add}}",
 	"is-delete": "Submit button text\n{{Identical|Delete}}",
