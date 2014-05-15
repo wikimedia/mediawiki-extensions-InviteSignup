@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"McDutchie",
-			"Siebrand"
+			"Siebrand",
+			"SPQRobin"
 		]
 	},
 	"invitesignup": "Mensen uitnodigen voor deze wiki",
@@ -10,7 +11,7 @@
 	"is-tableth-date": "Datum",
 	"is-tableth-email": "E-mailadres",
 	"is-tableth-inviter": "Uitgenodigd door",
-	"is-tableth-signup": "Registreren",
+	"is-tableth-signup": "Geregistreerd",
 	"is-tableth-groups": "Groepen",
 	"is-add": "Toevoegen",
 	"is-delete": "Verwijderen",
