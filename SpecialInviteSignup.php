@@ -128,7 +128,7 @@ class SpecialInviteSignup extends SpecialPage {
 			'action' => $this->getPageTitle()->getLocalUrl(),
 		);
 		$form = Html::openElement( 'form', $attribs );
-		$form .= Html::hidden( 'title', $this->getPageTitle()->getDBKey() );
+		$form .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() );
 		$form .= Html::hidden( 'token', $this->getUser()->getEditToken( 'is' ) );
 		$form .= Html::hidden( 'hash', $hash );
 		$form .= Html::hidden( 'do', 'delete' );
@@ -142,7 +142,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$lang = $this->getLanguage();
 
 		$add =
-			Html::hidden( 'title', $this->getPageTitle()->getDBKey() ) .
+			Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() ) .
 			Html::hidden( 'token', $user->getEditToken( 'is' ) ) .
 			Html::hidden( 'do', 'add' ) .
 			Xml::submitButton( $this->msg( 'is-add' )->text() );
