@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kaganer"
+			"Kaganer",
+			"Okras"
 		]
 	},
 	"invitesignup": "Приглашение новых людей в этот вики-проект",
@@ -9,7 +10,7 @@
 	"is-tableth-date": "Дата",
 	"is-tableth-email": "Эл. почта",
 	"is-tableth-inviter": "Приглашающий",
-	"is-tableth-signup": "Зарегистрировался",
+	"is-tableth-signup": "Зарегистрирован",
 	"is-tableth-groups": "Группы",
 	"is-add": "Добавить",
 	"is-delete": "Удалить",
