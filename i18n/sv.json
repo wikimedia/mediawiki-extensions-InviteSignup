@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jopparn"
+			"Jopparn",
+			"Lokal Profil"
 		]
 	},
 	"invitesignup": "Bjud in personer till denna wiki",
@@ -9,7 +10,7 @@
 	"is-tableth-date": "Datum",
 	"is-tableth-email": "E-post",
 	"is-tableth-inviter": "Inbjudaren",
-	"is-tableth-signup": "Skapa ett konto",
+	"is-tableth-signup": "Skapade ett konto",
 	"is-tableth-groups": "Grupper",
 	"is-add": "Lägg till",
 	"is-delete": "Radera",
