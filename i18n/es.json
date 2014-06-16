@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Macofe"
 		]
 	},
 	"invitesignup": "Invitar personas a este wiki",
@@ -9,7 +10,7 @@
 	"is-tableth-date": "Fecha",
 	"is-tableth-email": "Correo electrónico",
 	"is-tableth-inviter": "Invitador",
-	"is-tableth-signup": "Registrarse",
+	"is-tableth-signup": "Registrado",
 	"is-tableth-groups": "Grupos",
 	"is-add": "Añadir",
 	"is-delete": "Eliminar",
