@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"YaronSh",
-			"Yona b"
+			"Yona b",
+			"Amire80"
 		]
 	},
 	"invitesignup": "להזמין אנשים לוויקי זה",
@@ -10,7 +11,7 @@
 	"is-tableth-date": "תאריך",
 	"is-tableth-email": "דוא״ל",
 	"is-tableth-inviter": "מוזמנים",
-	"is-tableth-signup": "הרשמה",
+	"is-tableth-signup": "נרשם",
 	"is-tableth-groups": "קבוצות",
 	"is-add": "הוספה",
 	"is-delete": "מחיקה",
