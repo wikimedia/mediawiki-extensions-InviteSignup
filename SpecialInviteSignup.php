@@ -172,6 +172,8 @@ class SpecialInviteSignup extends SpecialPage {
 	}
 
 	public static function sendInviteEmail( User $inviter, $email, $hash ) {
+		global $wgPasswordSender, $wgPasswordSenderName;
+
 		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl( array( 'invite' => $hash, 'returnto' => 'Special:Dashboard' ) );
 
 		$subj = wfMessage( 'is-emailsubj' )->inContentLanguage();
@@ -179,8 +181,8 @@ class SpecialInviteSignup extends SpecialPage {
 			->params( $inviter->getName(), $url )
 			->inContentLanguage();
 
-		$emailFrom = new MailAddress( $inviter );
 		$emailTo = new MailAddress( $email );
+		$emailFrom = new MailAddress( $wgPasswordSender, $wgPasswordSenderName );
 		$params = array(
 			'to' => $emailTo,
 			'from' => $emailFrom,
