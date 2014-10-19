@@ -18,5 +18,5 @@
 	"is-emailsubj": "Zostałeś zaproszony do dołączenia na {{SITENAME}}",
 	"is-emailbody": "Witaj,\n\n$1 {{GENDER:$1|zaprosił|zaprosiła}} Cię do rejestracji na stronie {{SITENAME}}.\nMożesz zarejestrować się tutaj: $2",
 	"right-invitesignup": "Zaproś użytkowników do rejestracji",
-	"action-invitesignup": "zaproś użytkowników do rejestracji na tą stronę"
+	"action-invitesignup": "zaproś użytkowników do rejestracji na tę stronę"
 }
