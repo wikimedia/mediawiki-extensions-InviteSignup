@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Toliño"
+			"Toliño",
+			"Elisardojm"
 		]
 	},
 	"invitesignup": "Convidar xente a este wiki",
@@ -9,7 +10,7 @@
 	"is-tableth-date": "Data e hora",
 	"is-tableth-email": "Correo electrónico",
 	"is-tableth-inviter": "Persoa que convidou",
-	"is-tableth-signup": "Rexístrese",
+	"is-tableth-signup": "Rexistrado",
 	"is-tableth-groups": "Grupos",
 	"is-add": "Engadir",
 	"is-delete": "Borrar",
