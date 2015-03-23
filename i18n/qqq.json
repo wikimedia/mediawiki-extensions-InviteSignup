@@ -3,11 +3,12 @@
 		"authors": [
 			"Shirayuki",
 			"Nemo bis",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Umherirrender"
 		]
 	},
 	"invitesignup": "{{doc-special|InviteSignup|unlisted=1}}",
-	"is-desc": "{{desc|name=Invite Signup|url=http://www.mediawiki.org/wiki/Extension:InviteSignup}}",
+	"is-desc": "{{desc|name=Invite Signup|url=https://www.mediawiki.org/wiki/Extension:InviteSignup}}",
 	"is-tableth-date": "Table header.\n\"Date\" stands for \"date and time\".\n{{Identical|Date}}",
 	"is-tableth-email": "Table header\n{{Identical|E-mail}}",
 	"is-tableth-inviter": "Table header",
