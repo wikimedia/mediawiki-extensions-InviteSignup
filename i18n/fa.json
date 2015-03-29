@@ -3,13 +3,14 @@
 		"authors": [
 			"Reza1615",
 			"Armin1392",
-			"Ebraminio"
+			"Ebraminio",
+			"Mjbmr"
 		]
 	},
 	"invitesignup": "دعوت کردن اشخاص به این ویکی",
-	"is-desc": "ارسال دعوت‌های رایانامه",
+	"is-desc": "ارسال ایمیل دعوت‌ها",
 	"is-tableth-date": "تاریخ",
-	"is-tableth-email": "رایانامه",
+	"is-tableth-email": "ایمیل",
 	"is-tableth-inviter": "دعوت‌کننده",
 	"is-tableth-signup": "ثبت نام کرده",
 	"is-tableth-groups": "گروه‌ها",
