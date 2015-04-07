@@ -22,6 +22,11 @@ $specialPageAliases['arz'] = array(
 	'InviteSignup' => array( 'دعوه_تسجيل' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'InviteSignup' => array( 'داوت_ئی_سپت_کورتین' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'InviteSignup' => array( 'Registrierungseinladung' ),
