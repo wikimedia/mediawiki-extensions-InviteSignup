@@ -21,6 +21,10 @@ class InviteSignupHooks {
 				global $wgInviteSignupHash;
 				$wgInviteSignupHash = $hash;
 				$request->response()->setCookie( 'invite', $hash );
+
+				// Ensure user is allowed to register without entering email
+				global $wgEmailConfirmToEdit;
+				$wgEmailConfirmToEdit = false;
 			}
 		}
 	}
