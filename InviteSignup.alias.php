@@ -17,7 +17,7 @@ $specialPageAliases['ar'] = array(
 	'InviteSignup' => array( 'دعوة_تسجيل' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى) */
+/** Egyptian Arabic (مصرى) */
 $specialPageAliases['arz'] = array(
 	'InviteSignup' => array( 'دعوه_تسجيل' ),
 );
