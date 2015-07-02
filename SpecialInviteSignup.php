@@ -82,12 +82,12 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::openElement( 'table', array( 'class' => 'wikitable' ) ) .
 			Html::openElement( 'thead' ) .
 			Html::openElement( 'tr' ) .
-			Html::rawElement( 'th', null, $this->msg( 'is-tableth-date' )->text() ) .
-			Html::rawElement( 'th', null, $this->msg( 'is-tableth-email' )->text() ) .
-			Html::rawElement( 'th', null, $this->msg( 'is-tableth-inviter' )->text() ) .
-			Html::rawElement( 'th', null, $this->msg( 'is-tableth-signup' )->text() ) .
-			Html::rawElement( 'th', null, $this->msg( 'is-tableth-groups' )->text() ) .
-			Html::rawElement( 'th', null, '' ) .
+			Html::element( 'th', null, $this->msg( 'is-tableth-date' )->text() ) .
+			Html::element( 'th', null, $this->msg( 'is-tableth-email' )->text() ) .
+			Html::element( 'th', null, $this->msg( 'is-tableth-inviter' )->text() ) .
+			Html::element( 'th', null, $this->msg( 'is-tableth-signup' )->text() ) .
+			Html::element( 'th', null, $this->msg( 'is-tableth-groups' )->text() ) .
+			Html::element( 'th', null, '' ) .
 			$this->getAddRow() .
 			Html::closeElement( 'thead' )
 		);
@@ -114,7 +114,7 @@ class SpecialInviteSignup extends SpecialPage {
 				Html::element( 'td', null, $email ) .
 				Html::element( 'td', null, User::newFromId( $invite['inviter'] )->getName() ) .
 				Html::element( 'td', array( 'data-sort-value' => $invite['used'] ), $invite['used'] ? $lang->userTimeAndDate( $invite['used'], $user ) : '' ) .
-				Html::rawElement( 'td', null, $groups ) .
+				Html::element( 'td', null, $groups ) .
 				Html::rawElement( 'td', null, $invite['used'] ? '' : $this->getDeleteButton( $invite['hash'] ) ) .
 				Html::closeElement( 'tr' )
 			);
