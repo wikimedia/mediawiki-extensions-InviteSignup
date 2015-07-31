@@ -11,32 +11,31 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @license GPL-2.0+
  */
 
-$GLOBALS['wgExtensionCredits']['specialpage'][] = array(
+$wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'InviteSignup',
-	'version' => '2014-01-05',
+	'version' => '2015-07-31',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:InviteSignup',
 	'author' => array( 'Niklas Laxström' ),
 	'descriptionmsg' => 'is-desc',
 );
 
 $dir = __DIR__;
-$GLOBALS['wgAutoloadClasses']['InviteStore'] = "$dir/InviteStore.php";
-$GLOBALS['wgAutoloadClasses']['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
-$GLOBALS['wgMessagesDirs']['InviteSignup'] = __DIR__ . '/i18n';
-$GLOBALS['wgExtensionMessagesFiles']['InviteSignup'] = "$dir/InviteSignup.i18n.php";
-$GLOBALS['wgExtensionMessagesFiles']['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
-$GLOBALS['wgSpecialPages']['InviteSignup'] = 'SpecialInviteSignup';
-$GLOBALS['wgAvailableRights'][] = 'invitesignup';
+$wgAutoloadClasses['InviteStore'] = "$dir/InviteStore.php";
+$wgAutoloadClasses['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
+$wgMessagesDirs['InviteSignup'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['InviteSignup'] = "$dir/InviteSignup.i18n.php";
+$wgExtensionMessagesFiles['InviteSignupAlias'] = "$dir/InviteSignup.alias.php";
+$wgSpecialPages['InviteSignup'] = 'SpecialInviteSignup';
+$wgAvailableRights[] = 'invitesignup';
 
-$GLOBALS['wgInviteSignupHash'] = null;
+$wgInviteSignupHash = null;
 
 /**
  * List of groups the invitee will be promoted automatically.
  */
-$GLOBALS['wgISGroups'] = array();
+$wgISGroups = array();
 
-global $wgHooks;
 $wgHooks['BeforeInitialize'][] = function ( $title, &$unused, &$output, &$user, $request ) {
 	if ( !$title->isSpecialPage() ) {
 		return true;
