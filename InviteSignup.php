@@ -21,6 +21,7 @@ $wgExtensionCredits['specialpage'][] = array(
 );
 
 $dir = __DIR__;
+$wgAutoloadClasses['InviteSignupHooks'] = "$dir/InviteSignupHooks.php";
 $wgAutoloadClasses['InviteStore'] = "$dir/InviteStore.php";
 $wgAutoloadClasses['SpecialInviteSignup'] = "$dir/SpecialInviteSignup.php";
 $wgMessagesDirs['InviteSignup'] = __DIR__ . '/i18n';
@@ -36,75 +37,8 @@ $wgInviteSignupHash = null;
  */
 $wgISGroups = array();
 
-$wgHooks['BeforeInitialize'][] = function ( $title, &$unused, &$output, &$user, $request ) {
-	if ( !$title->isSpecialPage() ) {
-		return true;
-	}
-
-	list( $name ) = SpecialPageFactory::resolveAlias( $title->getDBkey() );
-	if ( $name !== 'Userlogin' ) {
-		return true;
-	}
-
-	$hash = $request->getVal( 'invite', $request->getCookie( 'invite' ) );
-	if ( $hash ) {
-		$store = new InviteStore( wfGetDB( DB_SLAVE ), 'invitesignup' );
-		$invite = $store->getInvite( $hash );
-		if ( $invite && $invite['used'] === null ) {
-			global $wgInviteSignupHash;
-			$wgInviteSignupHash = $hash;
-			$request->response()->setCookie( 'invite', $hash );
-		}
-	}
-
-	return true;
-};
-
-$wgHooks['UserGetRights'][] = function ( $user, &$rights ) {
-	global $wgInviteSignupHash;
-	if ( $wgInviteSignupHash === null ) {
-		return true;
-	}
-	$rights[] = 'createaccount';
-
-	return true;
-};
-
-$wgHooks['UserCreateForm'][] = function ( &$template ) {
-	global $wgInviteSignupHash;
-	if ( $wgInviteSignupHash === null ) {
-		return true;
-	}
-	$template->data['link'] = null;
-	$template->data['useemail'] = false;
-
-	return true;
-};
-
-$wgHooks['AddNewAccount'][] = function ( $user ) {
-	global $wgInviteSignupHash;
-	if ( $wgInviteSignupHash === null ) {
-		return true;
-	}
-
-	$store = new InviteStore( wfGetDB( DB_MASTER ), 'invitesignup' );
-
-	$invite = $store->getInvite( $wgInviteSignupHash );
-	$user->setOption( 'is-inviter', $invite['inviter'] );
-	$user->setEmail( $invite['email'] );
-	$user->confirmEmail();
-	foreach ( $invite['groups'] as $group ) {
-		$user->addGroup( $group );
-	}
-	$user->saveSettings();
-	$store->addSignupDate( $user, $wgInviteSignupHash );
-	global $wgRequest;
-	$wgRequest->response()->setCookie( 'invite', '', time() - 86400 );
-	return true;
-};
-
-$wgHooks['LoadExtensionSchemaUpdates'][] = function ( DatabaseUpdater $updater ) {
-	$dir = __DIR__ . '/sql';
-	$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.sql" );
-	return true;
-};
+$wgHooks['BeforeInitialize'][] = 'InviteSignupHooks::onBeforeInitialize';
+$wgHooks['UserGetRights'][] = 'InviteSignupHooks::onUserGetRights';
+$wgHooks['UserCreateForm'][] = 'InviteSignupHooks::onUserCreateForm';
+$wgHooks['AddNewAccount'][] = 'InviteSignupHooks::onAddNewAccount';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'InviteSignupHooks::onLoadExtensionSchemaUpdates';
