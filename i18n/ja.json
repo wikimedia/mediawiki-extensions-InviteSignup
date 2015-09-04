@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fryed-peach",
-			"Shirayuki"
+			"Shirayuki",
+			"Otokoume"
 		]
 	},
 	"invitesignup": "このウィキに人を招待",
@@ -16,6 +17,7 @@
 	"is-delete": "削除",
 	"is-invalidemail": "<b>$1</b> は有効なメールアドレスではありません。",
 	"is-emailsubj": "{{SITENAME}}へのご招待",
+	"is-emailbody": "{{GENDER:$1|$1}} があなたを {{SITENAME}} への参加を招待しています。\n$2 で登録できます",
 	"right-invitesignup": "利用者を招待",
 	"action-invitesignup": "利用者をこのサイトに招待"
 }
