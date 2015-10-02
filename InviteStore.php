@@ -30,6 +30,7 @@ class InviteStore {
 		foreach ( $res as $row ) {
 			$invites[] = $this->rowToArray( $row );
 		}
+
 		return $invites;
 	}
 
@@ -50,7 +51,6 @@ class InviteStore {
 		return $hash;
 	}
 
-
 	public function deleteInvite( $hash ) {
 		$conds = array( 'is_hash' => $hash );
 		$this->db->delete( $this->dbTable, $conds, __METHOD__ );
@@ -60,6 +60,7 @@ class InviteStore {
 		$fields = array( '*' );
 		$conds = array( 'is_hash' => $hash );
 		$res = $this->db->selectRow( $this->dbTable, $fields, $conds, __METHOD__ );
+
 		return $this->rowToArray( $res );
 	}
 
@@ -84,6 +85,7 @@ class InviteStore {
 			}
 			$array[substr( $key, 3 )] = $value;
 		}
+
 		return $array;
 	}
 }

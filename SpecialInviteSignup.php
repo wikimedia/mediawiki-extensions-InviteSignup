@@ -28,6 +28,7 @@ class SpecialInviteSignup extends SpecialPage {
 		if ( $this->store === null ) {
 			$this->store = new InviteStore( wfGetDB( DB_MASTER ), 'invitesignup' );
 		}
+
 		return $this->store;
 	}
 
@@ -52,7 +53,10 @@ class SpecialInviteSignup extends SpecialPage {
 				if ( trim( $email ) === '' ) {
 					// Silence
 				} elseif ( !$okay ) {
-					$out->wrapWikiMsg( Html::rawElement( 'div', array( 'class' => 'error' ), "$1" ), array( 'is-invalidemail', $email ) );
+					$out->wrapWikiMsg(
+						Html::rawElement( 'div', array( 'class' => 'error' ), "$1" ),
+						array( 'is-invalidemail', $email )
+					);
 				} else {
 					$groups = array();
 					foreach ( $this->groups as $group ) {
@@ -104,9 +108,15 @@ class SpecialInviteSignup extends SpecialPage {
 				Html::element( 'td', $whenSort, $when ) .
 				Html::element( 'td', null, $email ) .
 				Html::element( 'td', null, User::newFromId( $invite['inviter'] )->getName() ) .
-				Html::element( 'td', array( 'data-sort-value' => $invite['used'] ), $invite['used'] ? $lang->userTimeAndDate( $invite['used'], $user ) : '' ) .
+				Html::element( 'td',
+					array( 'data-sort-value' => $invite['used'] ),
+					$invite['used'] ? $lang->userTimeAndDate( $invite['used'], $user ) : ''
+				) .
 				Html::element( 'td', null, $groups ) .
-				Html::rawElement( 'td', null, $invite['used'] ? '' : $this->getDeleteButton( $invite['hash'] ) ) .
+				Html::rawElement( 'td',
+					null,
+					$invite['used'] ? '' : $this->getDeleteButton( $invite['hash'] )
+				) .
 				Html::closeElement( 'tr' )
 			);
 		}
@@ -125,6 +135,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$form .= Html::hidden( 'do', 'delete' );
 		$form .= Xml::submitButton( $this->msg( 'is-delete' )->text() );
 		$form .= Html::closeElement( 'form' );
+
 		return $form;
 	}
 
@@ -145,7 +156,11 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$groupChecks = array();
 		foreach ( $this->groups as $group ) {
-			$groupChecks[] = Xml::checkLabel( User::getGroupMember( $group ), "group-$group", "group-$group" );
+			$groupChecks[] = Xml::checkLabel(
+				User::getGroupMember( $group ),
+				"group-$group",
+				"group-$group"
+			);
 		}
 
 		$row =
@@ -159,13 +174,16 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::rawElement( 'td', null, $add ) .
 			Html::closeElement( 'form' ) .
 			Html::closeElement( 'tr' );
+
 		return $row;
 	}
 
 	public static function sendInviteEmail( User $inviter, $email, $hash ) {
 		global $wgPasswordSender;
 
-		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl( array( 'invite' => $hash, 'returnto' => 'Special:Dashboard' ) );
+		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl(
+			array( 'invite' => $hash, 'returnto' => 'Special:Dashboard' )
+		);
 
 		$subj = wfMessage( 'is-emailsubj' )->inContentLanguage();
 		$body = wfMessage( 'is-emailbody' )
@@ -178,7 +196,7 @@ class SpecialInviteSignup extends SpecialPage {
 			'to' => $emailTo,
 			'from' => $emailFrom,
 			'replyto' => $emailFrom,
-			'body' =>  $body->text(),
+			'body' => $body->text(),
 			'subj' => $subj->text(),
 		);
 		$job = new EmaillingJob( Title::newMainPage(), $params );
