@@ -6,9 +6,9 @@
 		]
 	},
 	"invitesignup": "Позивање корисника на вики",
-	"is-desc": "Шаљите позивнице преко е-поште",
+	"is-desc": "Шаљите позивнице преко имејла",
 	"is-tableth-date": "Датум",
-	"is-tableth-email": "Е-пошта",
+	"is-tableth-email": "Имејл",
 	"is-tableth-inviter": "Позивалац",
 	"is-tableth-signup": "Регистрација",
 	"is-tableth-groups": "Групе",
