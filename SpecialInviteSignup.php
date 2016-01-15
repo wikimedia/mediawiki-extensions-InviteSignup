@@ -20,6 +20,10 @@ class SpecialInviteSignup extends SpecialPage {
 		$this->groups = $wgISGroups;
 	}
 
+	public function doesWrites() {
+		return true;
+	}
+
 	public function setStore( InviteStore $store ) {
 		$this->store = $store;
 	}
