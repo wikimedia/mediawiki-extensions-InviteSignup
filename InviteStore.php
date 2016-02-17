@@ -23,10 +23,10 @@ class InviteStore {
 	}
 
 	public function getInvites() {
-		$fields = array( '*' );
-		$conds = array();
+		$fields = [ '*' ];
+		$conds = [];
 		$res = $this->db->select( $this->dbTable, $fields, $conds, __METHOD__ );
-		$invites = array();
+		$invites = [];
 		foreach ( $res as $row ) {
 			$invites[] = $this->rowToArray( $row );
 		}
@@ -38,13 +38,13 @@ class InviteStore {
 		global $wgSecretKey;
 		$hash = sha1( $inviter->getId() . $wgSecretKey . $email . wfTimestamp( TS_UNIX ) );
 
-		$data = array(
+		$data = [
 			'is_inviter' => $inviter->getId(),
 			'is_email' => $email,
 			'is_when' => wfTimestamp( TS_UNIX ),
 			'is_hash' => $hash,
 			'is_groups' => serialize( $groups ),
-		);
+		];
 
 		$this->db->insert( $this->dbTable, $data, __METHOD__ );
 
@@ -52,29 +52,29 @@ class InviteStore {
 	}
 
 	public function deleteInvite( $hash ) {
-		$conds = array( 'is_hash' => $hash );
+		$conds = [ 'is_hash' => $hash ];
 		$this->db->delete( $this->dbTable, $conds, __METHOD__ );
 	}
 
 	public function getInvite( $hash ) {
-		$fields = array( '*' );
-		$conds = array( 'is_hash' => $hash );
+		$fields = [ '*' ];
+		$conds = [ 'is_hash' => $hash ];
 		$res = $this->db->selectRow( $this->dbTable, $fields, $conds, __METHOD__ );
 
 		return $this->rowToArray( $res );
 	}
 
 	public function addSignupDate( User $user, $hash ) {
-		$conds = array( 'is_hash' => $hash );
-		$data = array(
+		$conds = [ 'is_hash' => $hash ];
+		$data = [
 			'is_used' => wfTimestamp( TS_UNIX ),
 			'is_invitee' => $user->getId(),
-		);
+		];
 		$this->db->update( $this->dbTable, $data, $conds, __METHOD__ );
 	}
 
 	protected function rowToArray( $row ) {
-		$array = array();
+		$array = [];
 		if ( $row === false ) {
 			return null;
 		}

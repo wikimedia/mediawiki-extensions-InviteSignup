@@ -58,11 +58,11 @@ class SpecialInviteSignup extends SpecialPage {
 					// Silence
 				} elseif ( !$okay ) {
 					$out->wrapWikiMsg(
-						Html::rawElement( 'div', array( 'class' => 'error' ), "$1" ),
-						array( 'is-invalidemail', $email )
+						Html::rawElement( 'div', [ 'class' => 'error' ], "$1" ),
+						[ 'is-invalidemail', $email ]
 					);
 				} else {
-					$groups = array();
+					$groups = [];
 					foreach ( $this->groups as $group ) {
 						if ( $request->getCheck( "group-$group" ) ) {
 							$groups[] = $group;
@@ -78,7 +78,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$lang = $this->getLanguage();
 
 		$out->addHtml(
-			Html::openElement( 'table', array( 'class' => 'wikitable' ) ) .
+			Html::openElement( 'table', [ 'class' => 'wikitable' ] ) .
 			Html::openElement( 'thead' ) .
 			Html::openElement( 'tr' ) .
 			Html::element( 'th', null, $this->msg( 'is-tableth-date' )->text() ) .
@@ -91,7 +91,7 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::closeElement( 'thead' )
 		);
 		foreach ( $invites as $hash => $invite ) {
-			$whenSort = array( 'data-sort-value' => $invite['when'] );
+			$whenSort = [ 'data-sort-value' => $invite['when'] ];
 			$when = $lang->userTimeAndDate( $invite['when'], $user );
 			$email = $invite['email'];
 			$groups = $invite['groups'];
@@ -113,7 +113,7 @@ class SpecialInviteSignup extends SpecialPage {
 				Html::element( 'td', null, $email ) .
 				Html::element( 'td', null, User::newFromId( $invite['inviter'] )->getName() ) .
 				Html::element( 'td',
-					array( 'data-sort-value' => $invite['used'] ),
+					[ 'data-sort-value' => $invite['used'] ],
 					$invite['used'] ? $lang->userTimeAndDate( $invite['used'], $user ) : ''
 				) .
 				Html::element( 'td', null, $groups ) .
@@ -128,10 +128,10 @@ class SpecialInviteSignup extends SpecialPage {
 	}
 
 	protected function getDeleteButton( $hash ) {
-		$attribs = array(
+		$attribs = [
 			'method' => 'post',
 			'action' => $this->getPageTitle()->getLocalUrl(),
-		);
+		];
 		$form = Html::openElement( 'form', $attribs );
 		$form .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() );
 		$form .= Html::hidden( 'token', $this->getUser()->getEditToken( 'is' ) );
@@ -153,12 +153,12 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::hidden( 'do', 'add' ) .
 			Xml::submitButton( $this->msg( 'is-add' )->text() );
 
-		$attribs = array(
+		$attribs = [
 			'method' => 'post',
 			'action' => $this->getPageTitle()->getLocalUrl(),
-		);
+		];
 
-		$groupChecks = array();
+		$groupChecks = [];
 		foreach ( $this->groups as $group ) {
 			$groupChecks[] = Xml::checkLabel(
 				User::getGroupMember( $group ),
@@ -186,7 +186,7 @@ class SpecialInviteSignup extends SpecialPage {
 		global $wgPasswordSender;
 
 		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl(
-			array( 'invite' => $hash, 'returnto' => 'Special:Dashboard' )
+			[ 'invite' => $hash, 'returnto' => 'Special:Dashboard' ]
 		);
 
 		$subj = wfMessage( 'is-emailsubj' )->inContentLanguage();
@@ -196,13 +196,13 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$emailTo = new MailAddress( $email );
 		$emailFrom = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );
-		$params = array(
+		$params = [
 			'to' => $emailTo,
 			'from' => $emailFrom,
 			'replyto' => $emailFrom,
 			'body' => $body->text(),
 			'subj' => $subj->text(),
-		);
+		];
 		$job = new EmaillingJob( Title::newMainPage(), $params );
 		$job->run();
 	}
