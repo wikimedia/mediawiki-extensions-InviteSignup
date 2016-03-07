@@ -1,7 +1,9 @@
 <?php
 
 class InviteSignupHooks {
-	public static function onBeforeInitialize( $title, &$unused, &$output, &$user, $request ) {
+	public static function onBeforeInitialize( Title $title, &$unused, &$output, &$user,
+		WebRequest $request
+	) {
 		if ( !$title->isSpecialPage() ) {
 			return true;
 		}
@@ -40,7 +42,7 @@ class InviteSignupHooks {
 		$template->data['useemail'] = false;
 	}
 
-	public static function onAddNewAccount( $user ) {
+	public static function onAddNewAccount( User $user ) {
 		global $wgInviteSignupHash;
 		if ( $wgInviteSignupHash === null ) {
 			return true;
