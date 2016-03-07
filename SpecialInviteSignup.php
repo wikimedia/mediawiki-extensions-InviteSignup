@@ -77,7 +77,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$invites = $store->getInvites();
 		$lang = $this->getLanguage();
 
-		$out->addHtml(
+		$out->addHTML(
 			Html::openElement( 'table', [ 'class' => 'wikitable' ] ) .
 			Html::openElement( 'thead' ) .
 			Html::openElement( 'tr' ) .
@@ -107,7 +107,7 @@ class SpecialInviteSignup extends SpecialPage {
 
 			$groups = $lang->commaList( $groups );
 
-			$out->addHtml(
+			$out->addHTML(
 				Html::openElement( 'tr' ) .
 				Html::element( 'td', $whenSort, $when ) .
 				Html::element( 'td', null, $email ) .
@@ -124,16 +124,16 @@ class SpecialInviteSignup extends SpecialPage {
 				Html::closeElement( 'tr' )
 			);
 		}
-		$out->addhtml( '</table>' );
+		$out->addHTML( '</table>' );
 	}
 
 	protected function getDeleteButton( $hash ) {
 		$attribs = [
 			'method' => 'post',
-			'action' => $this->getPageTitle()->getLocalUrl(),
+			'action' => $this->getPageTitle()->getLocalURL(),
 		];
 		$form = Html::openElement( 'form', $attribs );
-		$form .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() );
+		$form .= Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBkey() );
 		$form .= Html::hidden( 'token', $this->getUser()->getEditToken( 'is' ) );
 		$form .= Html::hidden( 'hash', $hash );
 		$form .= Html::hidden( 'do', 'delete' );
@@ -148,14 +148,14 @@ class SpecialInviteSignup extends SpecialPage {
 		$lang = $this->getLanguage();
 
 		$add =
-			Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBKey() ) .
+			Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBkey() ) .
 			Html::hidden( 'token', $user->getEditToken( 'is' ) ) .
 			Html::hidden( 'do', 'add' ) .
 			Xml::submitButton( $this->msg( 'is-add' )->text() );
 
 		$attribs = [
 			'method' => 'post',
-			'action' => $this->getPageTitle()->getLocalUrl(),
+			'action' => $this->getPageTitle()->getLocalURL(),
 		];
 
 		$groupChecks = [];
@@ -185,7 +185,7 @@ class SpecialInviteSignup extends SpecialPage {
 	public static function sendInviteEmail( User $inviter, $email, $hash ) {
 		global $wgPasswordSender;
 
-		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalUrl(
+		$url = Title::newFromText( 'Special:Userlogin/signup' )->getCanonicalURL(
 			[ 'invite' => $hash, 'returnto' => 'Special:Dashboard' ]
 		);
 
