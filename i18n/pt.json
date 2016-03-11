@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Fúlvio"
 		]
 	},
 	"invitesignup": "Convidar pessoas para esta wiki",
@@ -15,7 +16,7 @@
 	"is-delete": "Eliminar",
 	"is-invalidemail": "<b>$1</b> não é um endereço de correio electrónico válido.",
 	"is-emailsubj": "Está convidado a juntar-se a {{SITENAME}}",
-	"is-emailbody": "Olá,\n\n{{GENDER:$1|$1 convidou-o|convidou-a}} para registar-se em {{SITENAME}}.\nPode fazê-lo em $2",
+	"is-emailbody": "Olá,\n\n{{GENDER:$1|$1 convidou-o|$1 convidou-a}} para registar-se em {{SITENAME}}.\nPode fazê-lo em $2",
 	"right-invitesignup": "Convidar utilizadores a registarem-se",
 	"action-invitesignup": "convidar utilizadores a registarem-se neste sítio"
 }
