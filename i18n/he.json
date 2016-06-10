@@ -3,7 +3,8 @@
 		"authors": [
 			"YaronSh",
 			"Yona b",
-			"Amire80"
+			"Amire80",
+			"Guycn2"
 		]
 	},
 	"invitesignup": "להזמין אנשים לוויקי זה",
@@ -18,6 +19,6 @@
 	"is-invalidemail": "<b>$1</b> אינה כתובת דוא״ל תקנית.",
 	"is-emailsubj": "הוזמנת להצטרף אל {{SITENAME}}",
 	"is-emailbody": "שלום,\n\n$1 {{GENDER:$1|הזמין|הזמינה}} אותך להירשם ל־{{SITENAME}}.\nניתן להירשם ב־$2",
-	"right-invitesignup": "הזמן משתמשים להירשם",
+	"right-invitesignup": "הזמנת משתמשים להירשם",
 	"action-invitesignup": "הזמן משתמשים להירשם לאתר זה"
 }
