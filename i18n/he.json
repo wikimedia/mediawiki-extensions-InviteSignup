@@ -20,5 +20,5 @@
 	"is-emailsubj": "הוזמנת להצטרף אל {{SITENAME}}",
 	"is-emailbody": "שלום,\n\n$1 {{GENDER:$1|הזמין|הזמינה}} אותך להירשם ל־{{SITENAME}}.\nניתן להירשם ב־$2",
 	"right-invitesignup": "הזמנת משתמשים להירשם",
-	"action-invitesignup": "הזמן משתמשים להירשם לאתר זה"
+	"action-invitesignup": "להזמין משתמשים להירשם לאתר"
 }
