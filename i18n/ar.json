@@ -1,8 +1,22 @@
 {
-	"@metadata": {
+    "@metadata": {
 		"authors": [
-			"Meno25"
+			"Meno25",
+			"أحمد غربية <ahmad@arabdigitalexpression.org>"
 		]
-	},
-	"invitesignup": "دعوة الناس لهذه الويكي"
+    },
+    "invitesignup": "دعوة الناس إلى هذه الويكي",
+    "is-desc": "{{GENDER:أرسل|أرسلي}} دعوات بالبريد الإلكتروني",
+    "is-tableth-date": "التاريخ",
+    "is-tableth-email": "العنوان",
+    "is-tableth-inviter": "الدّاعي",
+    "is-tableth-signup": "فُتح الحساب في",
+    "is-tableth-groups": "المجموعات",
+    "is-add": "{{GENDER:أضِف|أضيفي}}",
+    "is-delete": "{{GENDER:احذف|احذفي}}",
+    "is-invalidemail": "<b>$1</b> ليس عنوان بريد إلكتروني صحيح.",
+    "is-emailsubj": "دعوة للمشاركة في {{SITENAME}}",
+    "is-emailbody": "مرحبا,\n\n{{GENDER:$1|$1}} دعاك للاشتراك في {{SITENAME}}.\nيمكنك فتح حساب في $2",
+    "right-invitesignup": "دعوة الناس لفتح حسابات",
+    "action-invitesignup": "{{GENDER:ادع|ادعي}} الناس لفتح حسابات في هذا الموقع"
 }
