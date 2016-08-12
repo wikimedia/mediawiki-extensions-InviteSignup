@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Muhammed taha",
-			"Calak"
+			"Calak",
+			"Sarchia"
 		]
 	},
 	"invitesignup": "خەڵک بۆ ئەم ویکییە بانگھێشت بکە",
@@ -12,7 +13,7 @@
 	"is-tableth-signup": "تۆماربوون",
 	"is-tableth-groups": "گرووپەکان",
 	"is-add": "زیادی بکە",
-	"is-delete": "بیسڕەوە",
+	"is-delete": "سڕینەوە",
 	"is-invalidemail": "<b>$1</b> ئیمەیڵەکەی دروست نییە.",
 	"is-emailsubj": "تۆ بانگھێشت کراویت بۆ بەشداریکردن لە {{SITENAME}}",
 	"is-emailbody": "سڵاو...\n\n{{GENDER:$1|$1}} تۆی بانگھێشت کردووە بۆ بەشداریکردنت لە{{SITENAME}}.\nدەتوانیت تۆماربیت لە $2",
