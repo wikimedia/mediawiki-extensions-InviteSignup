@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mirzali"
+			"Mirzali",
+			"Kumkumuk"
 		]
 	},
-	"is-tableth-signup": "Qeyd be",
+	"is-tableth-date": "Dem",
+	"is-tableth-email": "Email",
+	"is-tableth-signup": "Qeyd bı yo",
+	"is-tableth-groups": "Grubi",
+	"is-add": "Dek",
 	"is-delete": "Bestere"
 }
