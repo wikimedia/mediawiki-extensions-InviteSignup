@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meno25"
+			"Meno25",
+			"ديفيد"
 		]
 	},
-	"invitesignup": "دعوة الناس لهذه الويكي"
+	"invitesignup": "دعوة الناس لهذه الويكي",
+	"right-invitesignup": "دعوة المستخدمين للتسجيل",
+	"action-invitesignup": "دعوة المستخدمين للتسجيل"
 }
