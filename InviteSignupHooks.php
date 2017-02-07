@@ -9,7 +9,7 @@ class InviteSignupHooks {
 		}
 
 		list( $name ) = SpecialPageFactory::resolveAlias( $title->getDBkey() );
-		if ( $name !== 'Userlogin' ) {
+		if ( ($name !== 'UserLogin') && ($name !== 'CreateAccount') ) {
 			return true;
 		}
 
@@ -25,6 +25,11 @@ class InviteSignupHooks {
 				// Ensure user is allowed to register without entering email
 				global $wgEmailConfirmToEdit;
 				$wgEmailConfirmToEdit = false;
+
+				// Make sure user can access the CreateAccount page
+				// possibly this should append to the array instead of overwriting
+				global $wgWhitelistRead;
+				$wgWhitelistRead = array ("Special:CreateAccount");
 			}
 		}
 	}
