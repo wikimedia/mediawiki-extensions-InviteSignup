@@ -8,7 +8,7 @@
 		]
 	},
 	"invitesignup": "Convidar pessoas para esta wiki",
-	"is-desc": "Enviar convites por correio electrónico",
+	"is-desc": "Enviar convites por correio eletrónico",
 	"is-tableth-date": "Data",
 	"is-tableth-email": "Correio eletrónico",
 	"is-tableth-inviter": "Convidado(a) por",
@@ -16,7 +16,7 @@
 	"is-tableth-groups": "Grupos",
 	"is-add": "Adicionar",
 	"is-delete": "Eliminar",
-	"is-invalidemail": "<b>$1</b> não é um endereço de correio electrónico válido.",
+	"is-invalidemail": "<b>$1</b> não é um endereço de correio eletrónico válido.",
 	"is-emailsubj": "Está convidado a juntar-se à wiki {{SITENAME}}",
 	"is-emailbody": "Olá,\n\n{{GENDER:$1|$1}} convidou-o para se registar na wiki {{SITENAME}}.\nPode fazê-lo em $2",
 	"right-invitesignup": "Convidar utilizadores a registarem-se",
