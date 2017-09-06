@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Chrumps",
-			"Woytecr"
+			"Woytecr",
+			"Matma Rex"
 		]
 	},
 	"invitesignup": "Zaproś ludzi na tę wiki",
@@ -10,7 +11,7 @@
 	"is-tableth-date": "Data",
 	"is-tableth-email": "E-mail",
 	"is-tableth-inviter": "Zapraszający",
-	"is-tableth-signup": "Zarejestruj się",
+	"is-tableth-signup": "Data rejestracji",
 	"is-tableth-groups": "Grupy",
 	"is-add": "Dodaj",
 	"is-delete": "Usuń",
