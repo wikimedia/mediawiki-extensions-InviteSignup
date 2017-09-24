@@ -15,7 +15,7 @@ class InviteSignupHooks {
 
 		$hash = $request->getVal( 'invite', $request->getCookie( 'invite' ) );
 		if ( $hash ) {
-			$store = new InviteStore( wfGetDB( DB_SLAVE ), 'invitesignup' );
+			$store = new InviteStore( wfGetDB( DB_REPLICA ), 'invitesignup' );
 			$invite = $store->getInvite( $hash );
 			if ( $invite && $invite['used'] === null ) {
 				global $wgInviteSignupHash;
