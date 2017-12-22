@@ -10,6 +10,8 @@
  * @license GPL-2.0+
  */
 
+use Wikimedia\Rdbms\IDatabase;
+
 /**
  * InviteStore which uses database as storage.
  */
@@ -17,7 +19,7 @@ class InviteStore {
 	protected $db;
 	protected $dbTable;
 
-	public function __construct( DatabaseBase $db, $table ) {
+	public function __construct( IDatabase $db, $table ) {
 		$this->db = $db;
 		$this->dbTable = $table;
 	}
