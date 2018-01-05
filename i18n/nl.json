@@ -3,7 +3,8 @@
 		"authors": [
 			"McDutchie",
 			"Siebrand",
-			"SPQRobin"
+			"SPQRobin",
+			"Mar(c)"
 		]
 	},
 	"invitesignup": "Mensen uitnodigen voor deze wiki",
@@ -17,7 +18,7 @@
 	"is-delete": "Verwijderen",
 	"is-invalidemail": "<b>$1</b> is geen geldig e-mailadres.",
 	"is-emailsubj": "U bent uitgenodigd om lid te worden van {{SITENAME}}",
-	"is-emailbody": "Hallo,\n\n{{GENDER:$1|$1}} heeft u uitgenodigd om lid te worden van {{SITENAME}}.\n\nU kunt zich aanmelden via $2",
+	"is-emailbody": "Hallo,\n\n{{GENDER:$1|$1}} heeft u uitgenodigd om u aan te melden bij {{SITENAME}}.\nU kunt zich aanmelden via $2",
 	"right-invitesignup": "Mensen uitnodigen om zich aan te melden",
 	"action-invitesignup": "mensen uit te nodigen om zich aan te melden bij deze site"
 }
