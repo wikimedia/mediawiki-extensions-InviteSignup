@@ -4,7 +4,8 @@
 			"Vitorvicentevalente",
 			"Fúlvio",
 			"Diniscoelho",
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"Athena in Wonderland"
 		]
 	},
 	"invitesignup": "Convidar pessoas para esta wiki",
@@ -20,5 +21,5 @@
 	"is-emailsubj": "Está convidado a juntar-se à wiki {{SITENAME}}",
 	"is-emailbody": "Olá,\n\n{{GENDER:$1|$1}} convidou-o para se registar na wiki {{SITENAME}}.\nPode fazê-lo em $2",
 	"right-invitesignup": "Convidar utilizadores a registarem-se",
-	"action-invitesignup": "convidar utilizadores a registarem-se neste site"
+	"action-invitesignup": "convidar utilizadores a registarem-se neste sítio"
 }
