@@ -102,7 +102,7 @@ class SpecialInviteSignup extends SpecialPage {
 			}
 
 			foreach ( $groups as $i => $g ) {
-				$groups[$i] = User::getGroupMember( $g );
+				$groups[$i] = UserGroupMembership::getGroupMemberName( $g );
 			}
 
 			$groups = $lang->commaList( $groups );
@@ -161,7 +161,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$groupChecks = [];
 		foreach ( $this->groups as $group ) {
 			$groupChecks[] = Xml::checkLabel(
-				User::getGroupMember( $group ),
+				UserGroupMembership::getGroupMemberName( $group ),
 				"group-$group",
 				"group-$group"
 			);
