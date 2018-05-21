@@ -2,16 +2,22 @@
 	"@metadata": {
 		"authors": [
 			"Crt",
-			"Veikk0.ma"
+			"Veikk0.ma",
+			"Pyscowicz"
 		]
 	},
 	"invitesignup": "Kutsu käyttäjiä tähän wikiin",
+	"is-desc": "Lähetä sähköpostikutsuja",
 	"is-tableth-date": "Päiväys",
 	"is-tableth-email": "Sähköposti",
 	"is-tableth-inviter": "Kutsuja",
+	"is-tableth-signup": "Rekisteröitynyt",
 	"is-tableth-groups": "Ryhmät",
 	"is-add": "Lisää",
 	"is-delete": "Poista",
 	"is-invalidemail": "<b>$1</b> ei ole kelvollinen sähköpostiosoite.",
-	"is-emailsubj": "Sinut on kutsuttu liittymään sivustolle {{SITENAME}}."
+	"is-emailsubj": "Sinut on kutsuttu liittymään sivustolle {{SITENAME}}.",
+	"is-emailbody": "Hei,\n\n{{GENDER:$1|$1}} kutsui sinut rekisteröitymään sivustolle {{SITENAME}}.\nVoit rekisteröityä sivulla $2",
+	"right-invitesignup": "Kutsu käyttäjiä rekisteröitymään",
+	"action-invitesignup": "kutsu käyttäjiä rekisteröitymään tälle sivulle"
 }
