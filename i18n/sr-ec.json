@@ -3,7 +3,8 @@
 		"authors": [
 			"Rancher",
 			"Сербијана",
-			"BadDog"
+			"BadDog",
+			"Zoranzoki21"
 		]
 	},
 	"invitesignup": "Позовите људе на вики",
@@ -11,7 +12,7 @@
 	"is-tableth-date": "Датум",
 	"is-tableth-email": "Имејл",
 	"is-tableth-inviter": "Позивалац",
-	"is-tableth-signup": "Регистрација",
+	"is-tableth-signup": "Регистрован",
 	"is-tableth-groups": "Групе",
 	"is-add": "Додај",
 	"is-delete": "Обриши",
