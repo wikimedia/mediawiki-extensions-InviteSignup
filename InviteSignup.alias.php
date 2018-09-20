@@ -3,76 +3,75 @@
  * @author Niklas Laxström
  * @copyright Copyright © 2012 Lost in Translations Inc.
  */
-// @codingStandardsIgnoreFile
 
-$specialPageAliases = array();
+$specialPageAliases = [];
 
 /** English (English) */
-$specialPageAliases['en'] = array(
-	'InviteSignup' => array( 'InviteSignup' ),
-);
+$specialPageAliases['en'] = [
+	'InviteSignup' => [ 'InviteSignup' ],
+];
 
 /** Arabic (العربية) */
-$specialPageAliases['ar'] = array(
-	'InviteSignup' => array( 'دعوة_تسجيل' ),
-);
+$specialPageAliases['ar'] = [
+	'InviteSignup' => [ 'دعوة_تسجيل' ],
+];
 
 /** Egyptian Arabic (مصرى) */
-$specialPageAliases['arz'] = array(
-	'InviteSignup' => array( 'دعوه_تسجيل' ),
-);
+$specialPageAliases['arz'] = [
+	'InviteSignup' => [ 'دعوه_تسجيل' ],
+];
 
 /** Western Balochi (بلوچی رخشانی) */
-$specialPageAliases['bgn'] = array(
-	'InviteSignup' => array( 'داوت_ئی_سپت_کورتین' ),
-);
+$specialPageAliases['bgn'] = [
+	'InviteSignup' => [ 'داوت_ئی_سپت_کورتین' ],
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'InviteSignup' => array( 'Registrierungseinladung' ),
-);
+$specialPageAliases['de'] = [
+	'InviteSignup' => [ 'Registrierungseinladung' ],
+];
 
 /** Zazaki (Zazaki) */
-$specialPageAliases['diq'] = array(
-	'InviteSignup' => array( 'WaştışCıkewtış' ),
-);
+$specialPageAliases['diq'] = [
+	'InviteSignup' => [ 'WaştışCıkewtış' ],
+];
 
 /** Persian (فارسی) */
-$specialPageAliases['fa'] = array(
-	'InviteSignup' => array( 'ثبت‌نام_دعوت' ),
-);
+$specialPageAliases['fa'] = [
+	'InviteSignup' => [ 'ثبت‌نام_دعوت' ],
+];
 
 /** Korean (한국어) */
-$specialPageAliases['ko'] = array(
-	'InviteSignup' => array( '가입초대' ),
-);
+$specialPageAliases['ko'] = [
+	'InviteSignup' => [ '가입초대' ],
+];
 
 /** Macedonian (македонски) */
-$specialPageAliases['mk'] = array(
-	'InviteSignup' => array( 'ПоканаРегистрација' ),
-);
+$specialPageAliases['mk'] = [
+	'InviteSignup' => [ 'ПоканаРегистрација' ],
+];
 
 /** Malayalam (മലയാളം) */
-$specialPageAliases['ml'] = array(
-	'InviteSignup' => array( 'അംഗത്വമെടുക്കാൻക്ഷണിക്കുക' ),
-);
+$specialPageAliases['ml'] = [
+	'InviteSignup' => [ 'അംഗത്വമെടുക്കാൻക്ഷണിക്കുക' ],
+];
 
 /** Low Saxon (Netherlands) (Nedersaksies) */
-$specialPageAliases['nds-nl'] = array(
-	'InviteSignup' => array( 'Registrasie_uutneudiging' ),
-);
+$specialPageAliases['nds-nl'] = [
+	'InviteSignup' => [ 'Registrasie_uutneudiging' ],
+];
 
 /** Dutch (Nederlands) */
-$specialPageAliases['nl'] = array(
-	'InviteSignup' => array( 'Registratieinvitatie' ),
-);
+$specialPageAliases['nl'] = [
+	'InviteSignup' => [ 'Registratieinvitatie' ],
+];
 
 /** Simplified Chinese (中文（简体）‎) */
-$specialPageAliases['zh-hans'] = array(
-	'InviteSignup' => array( '邀请注册' ),
-);
+$specialPageAliases['zh-hans'] = [
+	'InviteSignup' => [ '邀请注册' ],
+];
 
 /** Traditional Chinese (中文（繁體）‎) */
-$specialPageAliases['zh-hant'] = array(
-	'InviteSignup' => array( '邀請註冊' ),
-);
+$specialPageAliases['zh-hant'] = [
+	'InviteSignup' => [ '邀請註冊' ],
+];
