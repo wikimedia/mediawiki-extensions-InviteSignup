@@ -18,6 +18,6 @@
 	"is-invalidemail": "<b>$1</b> ei ole kelvollinen sähköpostiosoite.",
 	"is-emailsubj": "Sinut on kutsuttu liittymään sivustolle {{SITENAME}}.",
 	"is-emailbody": "Hei,\n\n{{GENDER:$1|$1}} kutsui sinut rekisteröitymään sivustolle {{SITENAME}}.\nVoit rekisteröityä sivulla $2",
-	"right-invitesignup": "Kutsu käyttäjiä rekisteröitymään",
+	"right-invitesignup": "Kutsua käyttäjiä rekisteröitymään",
 	"action-invitesignup": "kutsu käyttäjiä rekisteröitymään tälle sivulle"
 }
