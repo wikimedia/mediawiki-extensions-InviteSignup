@@ -17,7 +17,7 @@
 	"is-delete": "Poista",
 	"is-invalidemail": "<b>$1</b> ei ole kelvollinen sähköpostiosoite.",
 	"is-emailsubj": "Sinut on kutsuttu liittymään {{GRAMMAR:illative|{{SITENAME}}}}.",
-	"is-emailbody": "Hei,\n\n{{GENDER:$1|$1}} kutsui sinut rekisteröitymään sivustolle {{SITENAME}}.\nVoit rekisteröityä sivulla $2",
+	"is-emailbody": "Hei,\n\n{{GENDER:$1|$1}} kutsui sinut rekisteröitymään {{GRAMMAR:illative|{{SITENAME}}}}.\nVoit rekisteröityä sivulla $2",
 	"right-invitesignup": "Kutsua käyttäjiä rekisteröitymään",
 	"action-invitesignup": "kutsu käyttäjiä rekisteröitymään tälle sivulle"
 }
