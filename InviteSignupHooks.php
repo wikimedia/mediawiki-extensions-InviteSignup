@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class InviteSignupHooks {
 	public static function onBeforeInitialize( Title $title, &$unused, &$output, &$user,
 		WebRequest $request
@@ -8,7 +10,10 @@ class InviteSignupHooks {
 			return true;
 		}
 
-		list( $name ) = SpecialPageFactory::resolveAlias( $title->getDBkey() );
+		list( $name ) = MediaWikiServices::getInstance()
+			->getSpecialPageFactory()
+			->resolveAlias( $title->getDBkey() );
+
 		if ( $name !== 'Userlogin' ) {
 			return true;
 		}
