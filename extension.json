@@ -23,21 +23,11 @@
 		"InviteSignupAlias": "InviteSignup.alias.php"
 	},
 	"Hooks": {
-		"AddNewAccount": [
-			"InviteSignupHooks::onAddNewAccount"
-		],
-		"BeforeInitialize": [
-			"InviteSignupHooks::onBeforeInitialize"
-		],
-		"LoadExtensionSchemaUpdates": [
-			"InviteSignupHooks::onLoadExtensionSchemaUpdates"
-		],
-		"UserCreateForm": [
-			"InviteSignupHooks::onUserCreateForm"
-		],
-		"UserGetRights": [
-			"InviteSignupHooks::onUserGetRights"
-		]
+		"AddNewAccount": "InviteSignupHooks::onAddNewAccount",
+		"BeforeInitialize": "InviteSignupHooks::onBeforeInitialize",
+		"LoadExtensionSchemaUpdates": "InviteSignupHooks::onLoadExtensionSchemaUpdates",
+		"UserCreateForm": "InviteSignupHooks::onUserCreateForm",
+		"UserGetRights": "InviteSignupHooks::onUserGetRights"
 	},
 	"config": {
 		"ISGroups": [],
