@@ -14,7 +14,7 @@ class InviteSignupHooks {
 			->getSpecialPageFactory()
 			->resolveAlias( $title->getDBkey() );
 
-		if ( $name !== 'Userlogin' && $name !== 'CreateAccount' ) {
+		if ( $name !== 'CreateAccount' ) {
 			return true;
 		}
 
