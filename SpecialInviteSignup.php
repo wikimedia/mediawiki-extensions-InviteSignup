@@ -95,14 +95,17 @@ class SpecialInviteSignup extends SpecialPage {
 			$when = $lang->userTimeAndDate( $invite['when'], $user );
 			$email = $invite['email'];
 			$groups = $invite['groups'];
-			if ( isset( $invite['userid'] ) ) {
-				$inviteeUser = User::newFromId( $invite['userid'] );
+			if ( isset( $invite['invitee'] ) ) {
+				$inviteeUser = User::newFromId( $invite['invitee'] );
 				$name = $inviteeUser->getName();
 				$email = "$name <$email>";
-			}
-
-			foreach ( $groups as $i => $g ) {
-				$groups[$i] = UserGroupMembership::getGroupMemberName( $g );
+				foreach ( $groups as $i => $g ) {
+					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, $name );
+				}
+			} else {
+				foreach ( $groups as $i => $g ) {
+					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, '#' );
+				}
 			}
 
 			$groups = $lang->commaList( $groups );
@@ -160,8 +163,9 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$groupChecks = [];
 		foreach ( $this->groups as $group ) {
+			// Username is not applicable
 			$groupChecks[] = Xml::checkLabel(
-				UserGroupMembership::getGroupMemberName( $group ),
+				UserGroupMembership::getGroupMemberName( $group, '#' ),
 				"group-$group",
 				"group-$group"
 			);
