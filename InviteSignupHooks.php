@@ -3,7 +3,11 @@
 use MediaWiki\MediaWikiServices;
 
 class InviteSignupHooks {
-	public static function onBeforeInitialize( Title $title, &$unused, &$output, &$user,
+	public static function onBeforeInitialize(
+		Title $title,
+		&$unused,
+		&$output,
+		&$user,
 		WebRequest $request
 	) {
 		if ( !$title->isSpecialPage() ) {
