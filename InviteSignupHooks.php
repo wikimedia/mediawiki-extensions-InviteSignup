@@ -69,10 +69,14 @@ class InviteSignupHooks {
 			return true;
 		}
 
-		$store = new InviteStore( wfGetDB( DB_MASTER ), 'invitesignup' );
+		$store = new InviteStore( wfGetDB( DB_PRIMARY ), 'invitesignup' );
 
 		$invite = $store->getInvite( $wgInviteSignupHash );
-		$user->setOption( 'is-inviter', $invite['inviter'] );
+
+		MediaWikiServices::getInstance()
+			->getUserOptionsManager()
+			->setOption( $user, 'is-inviter', $invite['inviter'] );
+
 		$user->setEmail( $invite['email'] );
 		$user->confirmEmail();
 		foreach ( $invite['groups'] as $group ) {
