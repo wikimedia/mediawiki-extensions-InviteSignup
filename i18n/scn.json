@@ -4,6 +4,9 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"is-tableth-email": "Email",
+	"is-tableth-groups": "Gruppi",
 	"is-add": "Agghiunci",
-	"is-delete": "Cancella"
+	"is-delete": "Cancella",
+	"is-invalidemail": "<b>$1</b> nun è nu nnirizzu email vàliddu."
 }
