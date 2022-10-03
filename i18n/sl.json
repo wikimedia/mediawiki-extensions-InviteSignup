@@ -4,5 +4,8 @@
 			"Eleassar"
 		]
 	},
-	"is-tableth-signup": "Registracija"
+	"is-desc": "Pošiljanje e-poštnih povabil",
+	"is-tableth-signup": "Registracija",
+	"right-invitesignup": "Povabilo uporabnikom k registraciji",
+	"action-invitesignup": "povabiti uporabnike k registraciji v tem projektu"
 }
