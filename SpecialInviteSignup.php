@@ -99,12 +99,17 @@ class SpecialInviteSignup extends SpecialPage {
 				$inviteeUser = User::newFromId( $invite['invitee'] );
 				$name = $inviteeUser->getName();
 				$email = "$name <$email>";
+			} else {
+				$name = '#';
+			}
+			if ( method_exists( Language::class, 'getGroupMemberName' ) ) {
+				// MW 1.38+
 				foreach ( $groups as $i => $g ) {
-					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, $name );
+					$groups[$i] = $lang->getGroupMemberName( $g, $name );
 				}
 			} else {
 				foreach ( $groups as $i => $g ) {
-					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, '#' );
+					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, $name );
 				}
 			}
 
@@ -163,9 +168,15 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$groupChecks = [];
 		foreach ( $this->groups as $group ) {
+			if ( method_exists( Language::class, 'getGroupMemberName' ) ) {
+				// MW 1.38+
+				$groupnameLocalized = $lang->getGroupMemberName( $group, '#' );
+			} else {
+				$groupnameLocalized = UserGroupMembership::getGroupMemberName( $group, '#' );
+			}
 			// Username is not applicable
 			$groupChecks[] = Xml::checkLabel(
-				UserGroupMembership::getGroupMemberName( $group, '#' ),
+				$groupnameLocalized,
 				"group-$group",
 				"group-$group"
 			);
