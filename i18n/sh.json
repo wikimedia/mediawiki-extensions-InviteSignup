@@ -4,5 +4,13 @@
 			"Vlad5250"
 		]
 	},
-	"invitesignup": "Pozovi suradnike na ovaj wiki"
+	"invitesignup": "Pozovite ljude na ovaj viki",
+	"is-desc": "Šaljite pozivnice preko imejla",
+	"is-tableth-date": "Datum",
+	"is-tableth-email": "Imejl",
+	"is-tableth-inviter": "Pozivalac",
+	"is-tableth-signup": "Registrovan(-a)",
+	"is-tableth-groups": "Grupe",
+	"is-add": "Dodaj",
+	"is-delete": "Izbriši"
 }
