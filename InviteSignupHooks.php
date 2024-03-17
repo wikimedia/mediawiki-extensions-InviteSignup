@@ -14,7 +14,7 @@ class InviteSignupHooks {
 			return true;
 		}
 
-		list( $name ) = MediaWikiServices::getInstance()
+		[ $name ] = MediaWikiServices::getInstance()
 			->getSpecialPageFactory()
 			->resolveAlias( $title->getDBkey() );
 
@@ -94,14 +94,14 @@ class InviteSignupHooks {
 		$type = $updater->getDB()->getType();
 
 		switch ( $type ) {
-		case 'mysql':
-			$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.sql" );
-			break;
-		case 'postgres':
-			$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.pg.sql" );
-			break;
-		default:
-			throw new MWException( "InviteSignup does not support $type yet." );
+			case 'mysql':
+				$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.sql" );
+				break;
+			case 'postgres':
+				$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.pg.sql" );
+				break;
+			default:
+				throw new MWException( "InviteSignup does not support $type yet." );
 		}
 	}
 }
