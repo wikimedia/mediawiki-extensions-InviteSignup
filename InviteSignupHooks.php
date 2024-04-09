@@ -24,7 +24,10 @@ class InviteSignupHooks {
 
 		$hash = $request->getVal( 'invite', $request->getCookie( 'invite' ) );
 		if ( $hash ) {
-			$store = new InviteStore( wfGetDB( DB_REPLICA ), 'invitesignup' );
+			$store = new InviteStore(
+				MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA ),
+				'invitesignup'
+			);
 			$invite = $store->getInvite( $hash );
 			if ( $invite && $invite['used'] === null ) {
 				global $wgInviteSignupHash;
@@ -69,7 +72,10 @@ class InviteSignupHooks {
 			return true;
 		}
 
-		$store = new InviteStore( wfGetDB( DB_PRIMARY ), 'invitesignup' );
+		$store = new InviteStore(
+			MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY ),
+			'invitesignup'
+		);
 
 		$invite = $store->getInvite( $wgInviteSignupHash );
 
