@@ -96,7 +96,7 @@ class InviteSignupHooks {
 	}
 
 	public static function onLoadExtensionSchemaUpdates( DatabaseUpdater $updater ) {
-		$dir = __DIR__ . '/sql';
+		$dir = dirname( __DIR__ ) . '/sql';
 		$type = $updater->getDB()->getType();
 
 		switch ( $type ) {

@@ -188,8 +188,7 @@ class SpecialInviteSignup extends SpecialPage {
 			);
 		}
 
-		$row =
-			Html::openElement( 'tr' ) .
+		return Html::openElement( 'tr' ) .
 			Html::openElement( 'form', $attribs ) .
 			Html::element( 'td', null, $lang->userTimeAndDate( wfTimestamp(), $user ) ) .
 			Html::rawElement( 'td', null, Xml::input( 'email' ) ) .
@@ -199,8 +198,6 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::rawElement( 'td', null, $add ) .
 			Html::closeElement( 'form' ) .
 			Html::closeElement( 'tr' );
-
-		return $row;
 	}
 
 	public static function sendInviteEmail( User $inviter, $email, $hash ) {

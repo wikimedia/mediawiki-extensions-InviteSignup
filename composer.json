@@ -18,7 +18,6 @@
 		"issues": "https://phabricator.wikimedia.org/"
 	},
 	"require": {
-		"php": ">=5.5.9",
 		"composer/installers": ">=1.0.1"
 	},
 	"require-dev": {

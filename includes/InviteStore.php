@@ -13,7 +13,7 @@
 use Wikimedia\Rdbms\IDatabase;
 
 /**
- * InviteStore which uses database as storage.
+ * InviteStore which uses a database as storage.
  */
 class InviteStore {
 	protected $db;
