@@ -1,4 +1,7 @@
 <?php
+
+use MediaWiki\MediaWikiServices;
+
 /**
  * Special page
  *
@@ -30,7 +33,10 @@ class SpecialInviteSignup extends SpecialPage {
 
 	protected function getStore() {
 		if ( $this->store === null ) {
-			$this->store = new InviteStore( wfGetDB( DB_PRIMARY ), 'invitesignup' );
+			$this->store = new InviteStore(
+				MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY ),
+				'invitesignup'
+			);
 		}
 
 		return $this->store;
