@@ -99,15 +99,11 @@ class InviteSignupHooks {
 		$dir = dirname( __DIR__ ) . '/sql';
 		$type = $updater->getDB()->getType();
 
-		switch ( $type ) {
-			case 'mysql':
-				$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.sql" );
-				break;
-			case 'postgres':
-				$updater->addExtensionTable( 'invitesignup', "$dir/invitesignup.pg.sql" );
-				break;
-			default:
-				throw new MWException( "InviteSignup does not support $type yet." );
+		$supportedTypes = [ 'mysql', 'postgres', 'sqlite' ];
+		if ( !in_array( $type, $supportedTypes ) ) {
+			throw new MWException( "InviteSignup does not support $type yet." );
 		}
+
+		$updater->addExtensionTable( 'invitesignup', "$dir/$type/invitesignup.sql" );
 	}
 }
