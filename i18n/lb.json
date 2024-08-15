@@ -19,5 +19,5 @@
 	"is-emailsubj": "Dir sidd invitéiert op {{SITENAME}} matzemaachen",
 	"is-emailbody": "Bonjour,\n\n{{GENDER:$1|$1}} huet Iech invitéiert fir Iech op {{SITENAME}} anzeschreiwen.\nDir kënnt Iech op der Säit $2 aschreiwen.",
 	"right-invitesignup": "Benotzer invitéiere sech anzeschreiwen",
-	"action-invitesignup": "Benotzer invitéiere sech op dëse Site anzewchreiwen"
+	"action-invitesignup": "Benotzer invitéiere sech op dëse Site anzeschreiwen"
 }
