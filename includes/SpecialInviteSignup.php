@@ -108,15 +108,8 @@ class SpecialInviteSignup extends SpecialPage {
 			} else {
 				$name = '#';
 			}
-			if ( method_exists( Language::class, 'getGroupMemberName' ) ) {
-				// MW 1.38+
-				foreach ( $groups as $i => $g ) {
-					$groups[$i] = $lang->getGroupMemberName( $g, $name );
-				}
-			} else {
-				foreach ( $groups as $i => $g ) {
-					$groups[$i] = UserGroupMembership::getGroupMemberName( $g, $name );
-				}
+			foreach ( $groups as $i => $g ) {
+				$groups[$i] = $lang->getGroupMemberName( $g, $name );
 			}
 
 			$groups = $lang->commaList( $groups );
@@ -174,12 +167,8 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$groupChecks = [];
 		foreach ( $this->groups as $group ) {
-			if ( method_exists( Language::class, 'getGroupMemberName' ) ) {
-				// MW 1.38+
-				$groupnameLocalized = $lang->getGroupMemberName( $group, '#' );
-			} else {
-				$groupnameLocalized = UserGroupMembership::getGroupMemberName( $group, '#' );
-			}
+			$groupnameLocalized = $lang->getGroupMemberName( $group, '#' );
+
 			// Username is not applicable
 			$groupChecks[] = Xml::checkLabel(
 				$groupnameLocalized,
