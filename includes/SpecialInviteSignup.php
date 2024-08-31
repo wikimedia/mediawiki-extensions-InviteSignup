@@ -214,15 +214,15 @@ class SpecialInviteSignup extends SpecialPage {
 
 		$emailTo = new MailAddress( $email );
 		$emailFrom = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );
-		$params = [
-			'to' => $emailTo,
-			'from' => $emailFrom,
-			'replyto' => $emailFrom,
-			'body' => $body->text(),
-			'subj' => $subj->text(),
-		];
-		$job = new EmaillingJob( Title::newMainPage(), $params );
-		$job->run();
-	}
 
+		MediaWikiServices::getInstance()->getEmailer()
+			->send(
+				[ $emailTo ],
+				$emailFrom,
+				$subj->text(),
+				$body->text(),
+				null,
+				[ 'replyTo' => $emailFrom ]
+			);
+	}
 }
