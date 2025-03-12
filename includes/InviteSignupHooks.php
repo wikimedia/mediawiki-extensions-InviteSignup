@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 class InviteSignupHooks {
 	public static function onBeforeInitialize(
