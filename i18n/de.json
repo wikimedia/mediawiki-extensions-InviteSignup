@@ -14,8 +14,8 @@
 	"is-add": "Hinzufügen",
 	"is-delete": "Löschen",
 	"is-invalidemail": "<b>$1</b> ist keine gültige E-Mail-Adresse.",
-	"is-emailsubj": "Du bist eingeladen, {{SITENAME}} beizutreten",
-	"is-emailbody": "Hallo,\n\n{{GENDER:$1|$1}} hat dich zur Registrierung auf {{SITENAME}} eingeladen.\nDu kannst dich auf $2 registrieren.",
+	"is-emailsubj": "{{#FORMAL:Du bist|Sie sind}} eingeladen, {{SITENAME}} beizutreten",
+	"is-emailbody": "Hallo,\n \n{{GENDER:$1|$1}} hat {{#FORMAL:dich|Sie}} zur Registrierung auf {{SITENAME}} eingeladen.\n{{#FORMAL:Du kannst dich|Sie können sich}} auf $2 registrieren.",
 	"right-invitesignup": "Benutzer zur Registrierung einladen",
 	"action-invitesignup": "Benutzer zur Registrierung auf dieser Website einzuladen"
 }
