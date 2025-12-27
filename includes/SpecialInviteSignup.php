@@ -144,7 +144,7 @@ class SpecialInviteSignup extends SpecialPage {
 		$form .= Html::hidden( 'token', $this->getUser()->getEditToken( 'is' ) );
 		$form .= Html::hidden( 'hash', $hash );
 		$form .= Html::hidden( 'do', 'delete' );
-		$form .= Xml::submitButton( $this->msg( 'is-delete' )->text() );
+		$form .= Html::submitButton( $this->msg( 'is-delete' )->text(), [] );
 		$form .= Html::closeElement( 'form' );
 
 		return $form;
@@ -158,7 +158,7 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::hidden( 'title', $this->getPageTitle()->getPrefixedDBkey() ) .
 			Html::hidden( 'token', $user->getEditToken( 'is' ) ) .
 			Html::hidden( 'do', 'add' ) .
-			Xml::submitButton( $this->msg( 'is-add' )->text() );
+			Html::submitButton( $this->msg( 'is-add' )->text(), [] );
 
 		$attribs = [
 			'method' => 'post',
@@ -170,17 +170,14 @@ class SpecialInviteSignup extends SpecialPage {
 			$groupnameLocalized = $lang->getGroupMemberName( $group, '#' );
 
 			// Username is not applicable
-			$groupChecks[] = Xml::checkLabel(
-				$groupnameLocalized,
-				"group-$group",
-				"group-$group"
-			);
+			$groupChecks[] = Html::check( "group-$group", false, [ 'id' => "group-$group" ] ) .
+				"\u{00A0}" . Html::label( $groupnameLocalized, "group-$group" );
 		}
 
 		return Html::openElement( 'tr' ) .
 			Html::openElement( 'form', $attribs ) .
 			Html::element( 'td', null, $lang->userTimeAndDate( wfTimestamp(), $user ) ) .
-			Html::rawElement( 'td', null, Xml::input( 'email' ) ) .
+			Html::rawElement( 'td', null, Html::input( 'email' ) ) .
 			Html::element( 'td', null, $user->getName() ) .
 			Html::element( 'td', null, '' ) .
 			Html::rawElement( 'td', null, implode( ' ', $groupChecks ) ) .
