@@ -20,9 +20,14 @@ class SpecialInviteSignup extends SpecialPage {
 	protected $store;
 
 	public function __construct() {
-		parent::__construct( 'InviteSignup', 'invitesignup' );
+		parent::__construct( 'InviteSignup' );
 		global $wgISGroups;
 		$this->groups = $wgISGroups;
+	}
+
+	/** @inheritDoc */
+	public function getRestriction(): string {
+		return 'invitesignup';
 	}
 
 	public function doesWrites() {
