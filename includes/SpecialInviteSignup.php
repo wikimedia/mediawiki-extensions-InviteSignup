@@ -1,8 +1,9 @@
 <?php
 
 use MediaWiki\Html\Html;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\Mail\IEmailer;
 use MediaWiki\Title\Title;
+use Wikimedia\Rdbms\IConnectionProvider;
 
 /**
  * Special page
@@ -19,7 +20,10 @@ class SpecialInviteSignup extends SpecialPage {
 	protected $groups;
 	protected $store;
 
-	public function __construct() {
+	public function __construct(
+		private readonly IConnectionProvider $dbProvider,
+		private readonly IEmailer $emailer,
+	) {
 		parent::__construct( 'InviteSignup' );
 		global $wgISGroups;
 		$this->groups = $wgISGroups;
@@ -41,7 +45,7 @@ class SpecialInviteSignup extends SpecialPage {
 	protected function getStore() {
 		if ( $this->store === null ) {
 			$this->store = new InviteStore(
-				MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY ),
+				$this->dbProvider->getPrimaryDatabase(),
 				'invitesignup'
 			);
 		}
@@ -208,14 +212,13 @@ class SpecialInviteSignup extends SpecialPage {
 		$emailTo = new MailAddress( $email );
 		$emailFrom = new MailAddress( $wgPasswordSender, $this->msg( 'emailsender' )->text() );
 
-		MediaWikiServices::getInstance()->getEmailer()
-			->send(
-				[ $emailTo ],
-				$emailFrom,
-				$subj->text(),
-				$body->text(),
-				null,
-				[ 'replyTo' => $emailFrom ]
-			);
+		$this->emailer->send(
+			[ $emailTo ],
+			$emailFrom,
+			$subj->text(),
+			$body->text(),
+			null,
+			[ 'replyTo' => $emailFrom ]
+		);
 	}
 }

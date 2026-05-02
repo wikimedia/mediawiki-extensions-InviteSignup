@@ -43,7 +43,13 @@
 		]
 	},
 	"SpecialPages": {
-		"InviteSignup": "SpecialInviteSignup"
+		"InviteSignup": {
+			"class": "SpecialInviteSignup",
+			"services": [
+				"ConnectionProvider",
+				"Emailer"
+			]
+		}
 	},
 	"manifest_version": 2
 }
