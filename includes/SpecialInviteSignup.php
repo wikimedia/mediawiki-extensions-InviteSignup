@@ -82,7 +82,7 @@ class SpecialInviteSignup extends SpecialPage {
 						}
 					}
 					$hash = $store->addInvite( $user, $email, $groups );
-					self::sendInviteEmail( $user, $email, $hash );
+					$this->sendInviteEmail( $user, $email, $hash );
 				}
 			}
 		}
@@ -193,20 +193,20 @@ class SpecialInviteSignup extends SpecialPage {
 			Html::closeElement( 'tr' );
 	}
 
-	public static function sendInviteEmail( User $inviter, $email, $hash ) {
+	private function sendInviteEmail( User $inviter, string $email, string $hash ) {
 		global $wgPasswordSender;
 
 		$url = Title::newFromText( 'Special:CreateAccount' )->getCanonicalURL(
 			[ 'invite' => $hash ]
 		);
 
-		$subj = wfMessage( 'is-emailsubj' )->inContentLanguage();
-		$body = wfMessage( 'is-emailbody' )
+		$subj = $this->msg( 'is-emailsubj' )->inContentLanguage();
+		$body = $this->msg( 'is-emailbody' )
 			->params( $inviter->getName(), $url )
 			->inContentLanguage();
 
 		$emailTo = new MailAddress( $email );
-		$emailFrom = new MailAddress( $wgPasswordSender, wfMessage( 'emailsender' )->text() );
+		$emailFrom = new MailAddress( $wgPasswordSender, $this->msg( 'emailsender' )->text() );
 
 		MediaWikiServices::getInstance()->getEmailer()
 			->send(
