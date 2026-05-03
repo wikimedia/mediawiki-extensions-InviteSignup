@@ -10,6 +10,8 @@
  * @license GPL-2.0-or-later
  */
 
+use MediaWiki\MainConfigNames;
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
@@ -37,8 +39,8 @@ class InviteStore {
 	}
 
 	public function addInvite( User $inviter, $email, $groups ) {
-		global $wgSecretKey;
-		$hash = sha1( $inviter->getId() . $wgSecretKey . $email . wfTimestamp( TS_UNIX ) );
+		$secretKey = MediaWikiServices::getInstance()->getMainConfig()->get( MainConfigNames::SecretKey );
+		$hash = sha1( $inviter->getId() . $secretKey . $email . wfTimestamp( TS_UNIX ) );
 
 		$data = [
 			'is_inviter' => $inviter->getId(),

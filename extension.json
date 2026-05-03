@@ -46,6 +46,7 @@
 		"InviteSignup": {
 			"class": "SpecialInviteSignup",
 			"services": [
+				"MainConfig",
 				"ConnectionProvider",
 				"Emailer"
 			]

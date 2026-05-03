@@ -1,7 +1,9 @@
 <?php
 
+use MediaWiki\Config\Config;
 use MediaWiki\Html\Html;
 use MediaWiki\Mail\IEmailer;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IConnectionProvider;
 
@@ -17,16 +19,14 @@ use Wikimedia\Rdbms\IConnectionProvider;
  */
 
 class SpecialInviteSignup extends SpecialPage {
-	protected $groups;
 	protected $store;
 
 	public function __construct(
+		private readonly Config $config,
 		private readonly IConnectionProvider $dbProvider,
 		private readonly IEmailer $emailer,
 	) {
 		parent::__construct( 'InviteSignup' );
-		global $wgISGroups;
-		$this->groups = $wgISGroups;
 	}
 
 	/** @inheritDoc */
@@ -80,7 +80,7 @@ class SpecialInviteSignup extends SpecialPage {
 					);
 				} else {
 					$groups = [];
-					foreach ( $this->groups as $group ) {
+					foreach ( $this->config->get( 'ISGroups' ) as $group ) {
 						if ( $request->getCheck( "group-$group" ) ) {
 							$groups[] = $group;
 						}
@@ -177,7 +177,7 @@ class SpecialInviteSignup extends SpecialPage {
 		];
 
 		$groupChecks = [];
-		foreach ( $this->groups as $group ) {
+		foreach ( $this->config->get( 'ISGroups' ) as $group ) {
 			$groupnameLocalized = $lang->getGroupMemberName( $group, '#' );
 
 			// Username is not applicable
@@ -198,8 +198,6 @@ class SpecialInviteSignup extends SpecialPage {
 	}
 
 	private function sendInviteEmail( User $inviter, string $email, string $hash ) {
-		global $wgPasswordSender;
-
 		$url = Title::newFromText( 'Special:CreateAccount' )->getCanonicalURL(
 			[ 'invite' => $hash ]
 		);
@@ -210,7 +208,10 @@ class SpecialInviteSignup extends SpecialPage {
 			->inContentLanguage();
 
 		$emailTo = new MailAddress( $email );
-		$emailFrom = new MailAddress( $wgPasswordSender, $this->msg( 'emailsender' )->text() );
+		$emailFrom = new MailAddress(
+			$this->config->get( MainConfigNames::PasswordSender ),
+			$this->msg( 'emailsender' )->text()
+		);
 
 		$this->emailer->send(
 			[ $emailTo ],
